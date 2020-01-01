@@ -20,7 +20,7 @@
 + ***Github***
 + ***IDE***
 
-### Publisher (2~4개월)
+### Publisher (2 ~ 4 month) 
 
 ------
 
@@ -135,7 +135,7 @@
 
 
 
-### Front-end Develper (6~8개월)
+### Front-end Develper (6 ~ 8 month)
 
 -----
 

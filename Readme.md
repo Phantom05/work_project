@@ -6,17 +6,23 @@
 
 ### Member
 
+-----
+
 - 이준영, 김율겸
 
 
 
 ### Build Goal Stack
 
+------
+
 + ***Git***
 + ***Github***
 + ***IDE***
 
 ### Publisher (2~4개월)
+
+------
 
 + ***HTML*** (표준문서)
 
@@ -130,6 +136,8 @@
 
 
 ### Front-end Develper (6~8개월)
+
+-----
 
 + ***Javascript***
 
@@ -322,7 +330,7 @@
 
 
 
-
+-------
 
 **HomeWork**
 
@@ -332,9 +340,7 @@
 
 
 
-
-
-#### ***- Goal Portfolio***
+### ***- Goal Portfolio
 
 ****
 

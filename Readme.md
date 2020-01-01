@@ -334,23 +334,23 @@
 
 
 
-***- goal Portfolio***
+#### ***- Goal Portfolio***
 
 ****
 
 **Frontend**
 
-Only Publishing Projct 2개
++ Only Publishing Projct 2개
 
-Nodejs Express  + OpenAPI Project 1개 
++ Nodejs Express  + OpenAPI Project 1개 
 
-React Toy Project 5개
++ React Toy Project 5개
 
-React + Redux Project 1개
++ React + Redux Project 1개
 
 
 
 **Frontend + Backend**
 
-React  + Redux  + Redux-saga + Nodejs Express Backend Server  + MySQL Database Project 1개
++ React  + Redux  + Redux-saga + Nodejs Express Backend Server  + MySQL Database Project 1개
 

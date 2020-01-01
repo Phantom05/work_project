@@ -22,8 +22,6 @@
 
 ### Publisher (2 ~ 4 month) 
 
-------
-
 + ***HTML*** (표준문서)
 
   소개
@@ -136,8 +134,6 @@
 
 
 ### Front-end Develper (6 ~ 8 month)
-
------
 
 + ***Javascript***
 

@@ -1,3 +1,3 @@
 ##  오리엔테이션
 
-![srjhergwgwe](https://user-images.githubusercontent.com/33567964/71759032-911c5700-2eea-11ea-90f3-a8bb63e050be.png)
+![srjrthergwf](https://user-images.githubusercontent.com/33567964/71759076-1b64bb00-2eeb-11ea-8586-3626bd797b3a.png)

@@ -1,0 +1,61 @@
+li{
+  list-style: none;
+}
+table, th, td{
+  border: 1px solid black;
+}
+span{
+  width: 100%;
+  background: orange;
+}
+
+.test{
+  display: inline-block;
+  width: 100%;
+  background: powderblue;
+}
+
+
+.parent{
+  overflow: hidden;
+}
+.box{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  height: 100px;
+}
+footer{
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+
+.cities{
+  background: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid orange;
+}
+
+.main h2{
+  color: red;
+}
+
+#uniq h2,#uniq p{
+  font-style: italic;
+}
+
+.test_box_top{
+  padding-bottom: 20px;
+  background: yellow;
+  margin-bottom: 20px;
+}
+.test_box{
+  border: 1px solid red;
+  padding-bottom:50px;
+  /* height: 50px; */
+}

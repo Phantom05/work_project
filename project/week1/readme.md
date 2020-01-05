@@ -122,6 +122,8 @@
 
 + Holy grail layout을 만들어보라고 해보고 싶은데 아직 css 수업이 안들어가서 권해보기가 애매하네욯ㅎㅎㅎ float:left 들어간 부모태그에 overflow:hidden 규칙만 지켜주시면 한번 만들어보시는것도 괜찮을거같아요 ㅎㅎ!
 
++ [생활코딩 WEB2 수업 듣기](https://opentutorials.org/course/3086)
+
 #### case1
 ![11_01](https://user-images.githubusercontent.com/33567964/71775341-95b43e80-2fc2-11ea-8e5e-3be01682435d.png)
 

@@ -111,3 +111,20 @@
 + [typora  사용해보기](https://www.typora.io/)
 + Holy grail layout을 만들어보라고 해보고 싶은데 아직 css 수업이 안들어가서 권해보기가 애매하네욯ㅎㅎㅎ float:left 들어간 부모태그에 overflow:hidden 규칙만 지켜주시면 한번 만들어보시는것도 괜찮을거같아요 ㅎㅎ!
 
+#### case1
+![11_01](https://user-images.githubusercontent.com/33567964/71775341-95b43e80-2fc2-11ea-8e5e-3be01682435d.png)
+
+
+
+
+#### case2
+![large](https://user-images.githubusercontent.com/33567964/71775324-48d06800-2fc2-11ea-80c0-681497631d7d.png)
+
+
+
+#### case3
+![TG4s4](https://user-images.githubusercontent.com/33567964/71775332-61408280-2fc2-11ea-9748-753e9d3c1dcb.jpg)
+
+
+#### case4
+![1862011a311b601a2bd1f0d95e17c289](https://user-images.githubusercontent.com/33567964/71775335-7f0de780-2fc2-11ea-8b26-0aa79f701ce1.png)

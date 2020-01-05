@@ -108,4 +108,6 @@
 + [태그 암기하기](https://www.w3schools.com/tags/tag_doctype.asp)
 + 모든 태그 암기하고 사용해보기
 + css 이용해보기
++ [typora  사용해보기](https://www.typora.io/)
++ Holy grail layout을 만들어보라고 해보고 싶은데 아직 css 수업이 안들어가서 권해보기가 애매하네욯ㅎㅎㅎ float:left 들어간 부모태그에 overflow:hidden 규칙만 지켜주시면 한번 만들어보시는것도 괜찮을거같아요 ㅎㅎ!
 

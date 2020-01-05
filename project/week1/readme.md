@@ -27,7 +27,7 @@
 
   + Block Elements
 
-    +  ```html
+    + ```js
       <address>
       <article>
       <aside>
@@ -57,13 +57,13 @@
       <tfoot>
       <ul>
       <video>
-       ```
+      ```
 
-      
+    
 
   + Inline Elements
 
-    + ```html
+    + ```js
       <a>
       <abbr>
       <acronym>

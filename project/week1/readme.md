@@ -8,6 +8,7 @@
 
 
 + 공부한것 기준으로 Git 복습 해보기
+
 + ***Git 터미널 복습***
   + `git init`
   + `git status`
@@ -18,7 +19,9 @@
   + `git commit -m '내용'`
   + `git branch '브렌치 이름'`
   + `git checkout branch_name`
+  
 + 소스트리 사용해보기.
+
 + 소스트리 사용해서 Git 터미널 복습 해보기
 
 + lorem 사용, 인코딩
@@ -104,11 +107,19 @@
 + 박스모델 복습
 
 + Css파일 html head에 링크해보기
+
 + script파일 태그 html에 넣어보기
+
 + [태그 암기하기](https://www.w3schools.com/tags/tag_doctype.asp)
+
 + 모든 태그 암기하고 사용해보기
+
++ 금요일 오후 8시 까지 엑셀 파일에 시험보고 제출하기
+
 + css 이용해보기
+
 + [typora  사용해보기](https://www.typora.io/)
+
 + Holy grail layout을 만들어보라고 해보고 싶은데 아직 css 수업이 안들어가서 권해보기가 애매하네욯ㅎㅎㅎ float:left 들어간 부모태그에 overflow:hidden 규칙만 지켜주시면 한번 만들어보시는것도 괜찮을거같아요 ㅎㅎ!
 
 #### case1

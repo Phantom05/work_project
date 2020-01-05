@@ -135,7 +135,7 @@
 
 ### Front-end Develper (6 ~ 8 month)
 
-+ ***Javascript***
++ ***Javascript*** (표준 문서 + 책 진도)
 
   소개
   위치
@@ -279,11 +279,11 @@
 
 + ***DataBase - MySQL***
 
-+ ***React***
++ ***React*** (공식문서)
 
-+ ***Redux***
++ ***Redux*** (공식문서)
 
-+ ***Redux-Saga***
++ ***Redux-Saga*** (공식문서)
 
 + ***AWS***
 
@@ -344,6 +344,11 @@
 > + HTML의 이해, 태그들의 이해
 
 > 2주차
+>
+> + Git 관련 복습
+>
+> + HTML Form 태그, HTML5의 이해
+> + css 사용법, css 개념의 이해, 속성들의 이해
 
 > 3주차
 
@@ -357,7 +362,8 @@
 
 **HomeWork**
 
-- 1주차
+- [1주차](https://github.com/Phantom05/work_project/blob/master/project/week1/readme.md)
+- 2주차
 
 
 

@@ -17,6 +17,32 @@
 ------
 
 + ***Git***
+  + init
+  + remote
+  + fetch
+  + pull
+  + stash
+  + remove
+  + push
+  + merge
+  + branch
+  + ssh
+  + tag
+  + stage, unstage
+  + commit
+  + add, hash
+  + config
+  + conflict resolve
+  + patch
+  + rebase
+  + reset
+  + git strategy
+  + git flow
+  + action
+  + discard
+  + archive
+  + multi remote strategy
++ ***Sourcetree***
 + ***Github***
 + ***IDE***
 

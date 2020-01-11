@@ -1,0 +1,12 @@
+.form-group{
+  padding:5px;
+  border-bottom: 1px solid gray;
+}
+.form-box{
+  /* border: 1px solid gray; */
+  margin-top: 50px;
+}
+.study_video{
+  width: 320px;
+  height: 240px;
+}

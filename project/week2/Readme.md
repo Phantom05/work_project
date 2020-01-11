@@ -76,8 +76,6 @@
 
 
 
-
-
 + [Typora 사용해보기](http://support.typora.io/Markdown-Reference/#block-elements)
 
 
@@ -88,35 +86,38 @@
 
 + [html5 shiv 훑어보기](https://webdir.tistory.com/81)
 + [유투브 페이지 클론코딩](https://www.youtube.com/?gl=KR)
-+ W3c school HTML 복습하기
++ [W3c school HTML 복습하기](https://www.w3schools.com/html/default.asp)
++ [HTML 퀴즈 풀어보기](https://www.w3schools.com/html/html_quiz.asp)
 
-+ Sign in 페이지 만들어 보기
 
-  + ***Case #1***
+
++ **Sign in 페이지 만들어 보기**
+
+  + *Case #1*
 
   ![srjrshergwgwe](https://user-images.githubusercontent.com/33567964/72198807-187f4280-3476-11ea-9d99-f9f402036563.png)
 
   
 
-  + ***Case #2***
+  + *Case #2*
 
   ![tyruktrjrthergw](https://user-images.githubusercontent.com/33567964/72198811-259c3180-3476-11ea-86fd-077a9e96ea4b.png)
 
   
 
-  + ***Case #3***
+  + *Case #3*
 
   ![signin-form-vector-2156292](https://user-images.githubusercontent.com/33567964/72198814-2c2aa900-3476-11ea-9ecf-b97a455baa75.jpg)
 
   
 
-+ Sign up 페이지 만들어 보기
++ **Sign up 페이지 만들어 보기**
 
-  + ***Case #1***
+  + *Case #1*
 
   ![Registrationform-e1546156722767](https://user-images.githubusercontent.com/33567964/72198819-3cdb1f00-3476-11ea-8e37-7c6f8f158cf6.jpg)
 
-  + ***Case #2***
+  + *Case #2*
 
   ![srjrstjsrther](https://user-images.githubusercontent.com/33567964/72198820-41073c80-3476-11ea-962c-d47f9be99a8d.png)
 

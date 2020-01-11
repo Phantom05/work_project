@@ -82,7 +82,9 @@
 
 ## Homework
 
-
++ [HTML 참고 페이지 1](http://webberstudy.com/html-css/html-1/basic-knowledge/)
++ [HTML 참고 페이지 2](http://webberstudy.com/html-css/html-2/web-standard/)
++ [HTML 참고 페이지 3](http://webberstudy.com/html-css/html-3/meta-elements/)
 
 + [html5 shiv 훑어보기](https://webdir.tistory.com/81)
 + [유투브 페이지 클론코딩](https://www.youtube.com/?gl=KR)

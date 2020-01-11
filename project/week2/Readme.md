@@ -89,6 +89,7 @@
 + [html5 shiv 훑어보기](https://webdir.tistory.com/81)
 + [유투브 페이지 클론코딩](https://www.youtube.com/?gl=KR)
 + [W3c school HTML 복습하기](https://www.w3schools.com/html/default.asp)
++ [MDN HTML 파트 중-고급](https://developer.mozilla.org/ko/docs/Web/HTML)
 + [HTML 퀴즈 풀어보기](https://www.w3schools.com/html/html_quiz.asp)
 
 

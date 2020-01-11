@@ -17,7 +17,7 @@
 ------
 
 + ***Git***
-  + init
+  + init 
   + remote
   + fetch
   + pull
@@ -372,8 +372,9 @@
 > 2주차
 >
 > + Git 관련 복습
->
-> + HTML Form 태그, HTML5의 이해
+> + HTML Form 관련 태그, HTML5의 이해
+> + Web 구조 통신 맛보기
+> + HTML5 shiv
 > + css 사용법, css 개념의 이해, 속성들의 이해
 
 > 3주차

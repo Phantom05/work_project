@@ -87,7 +87,27 @@ h1/*Selectore*/{
   + Class, Id, Property[type="text"], tag, *종류와 사용법.
 + Group Selector => h1,h2,h3{}
 + File로만 css를 사용해야하는 이유, 인라인 스타일과 스타일 시트의 차이점
-+ color, background, border,margin, margin병합, padding, height,width,box-model, text관련 
++ text-align관련 복습하기
++ color, background, border,margin, margin병합(Block Element 일때만), padding, height,width,box-model, text관련 
++ 축약법과, 비축약법 
+
+```css
+.test_box1{
+  width: 200px;
+  height: 200px;
+  border: 1px solid purple;
+  padding:20px 30px 50px 10px;
+  /* 위 오른쪽 아래 왼쪽 (시계) */
+  padding:20px 30px;
+  /* 위 아래, 양옆 (인자가 2개일떄) */
+  padding:20px 30px 50px;
+  /* 위 양옆 아래(인자가 3개일떄) */
+  padding: 50px;
+  /* 4개의 면(인자가 1개일떄) */
+}
+```
+
+
 
 
 

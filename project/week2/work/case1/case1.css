@@ -45,6 +45,9 @@
   width: 100px;
   margin-left: 20px;
 }
+.header__logo_an{
+  display: inline-block;
+}
 /* content section */
 .content__section{
   width: 100%;

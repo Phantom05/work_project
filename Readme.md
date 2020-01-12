@@ -378,6 +378,12 @@
 > + css 사용법, css 개념의 이해, 속성들의 이해
 
 > 3주차
+>
+> +  Css 텍스트, 포지션, 레이아웃 부분 이해
+> + 애니메이션, display controll의 이해
+> + form관련 부분, website layout 구조 의 이해
+> + 3D transform, transition 관련 이해
+> + 미디어 쿼리, 반응형의 이해
 
 > 4주차
 

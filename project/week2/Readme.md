@@ -124,4 +124,53 @@
 
   ![srjrstjsrther](https://user-images.githubusercontent.com/33567964/72198820-41073c80-3476-11ea-962c-d47f9be99a8d.png)
 
-  
+
+
+
+
+
+
+
+
++ **About 페이지 만들어보기**
+
++ > css 우선순위 써보면서 순위 파악해보기
+  >
+  > 속성으로 css 줘보기
+  >
+  > Vscode emmet 써보기
+  >
+  > 가상선택자 써보기 
+  >
+  > 호버 써보기
+
+  + *Case #1*
+
+    ![Mirasee-about-page](https://user-images.githubusercontent.com/33567964/72214531-657f1980-3547-11ea-9c63-e768b7aa5fcc.png)
+
+    
+
+  + *Case #2*
+
+    ![about-page-personality](https://user-images.githubusercontent.com/33567964/72214534-6d3ebe00-3547-11ea-80f4-65fb07fe06e5.png)
+
+  + *Case #3*
+
+    ![872bc40447176f3a7d93c03e78a6b65f](https://user-images.githubusercontent.com/33567964/72214537-7760bc80-3547-11ea-8b9a-f56d6ff3dee8.jpg)
+
+  + *Case #4*
+
+    ![aejetahaerg](https://user-images.githubusercontent.com/33567964/72214538-7f206100-3547-11ea-83a4-6ebf4354ccb9.png)
+
+    
+
+  + *Case #5*
+
+    ![9269292](https://user-images.githubusercontent.com/33567964/72214542-8cd5e680-3547-11ea-84d7-6fe476d13d33.png)
+
+  + *Case #6*
+
+    ![artjerhergwr](https://user-images.githubusercontent.com/33567964/72214543-93645e00-3547-11ea-896f-78844645a914.png)
+
+    
+

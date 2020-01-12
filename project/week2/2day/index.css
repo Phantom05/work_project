@@ -1,0 +1,111 @@
+h1{
+  color: red;
+  text-align: center;
+}
+
+/* 선언 */
+.test    {
+  background: black;
+}
+/* 셀렉터 { 
+  프로퍼티: 벨류
+
+} */
+
+
+select{
+
+}
+div{
+
+}
+input{
+
+}
+
+.box{
+  border: 1px solid gray;
+}
+
+.inbox{
+  padding:5px !important; 
+}
+
+
+#info{
+  font-weight: bold;
+}
+.test_info{
+  font-weight: 400;
+}
+
+input[type="text"]{
+  font-size: 20px;
+  color: blue;
+}
+
+.input_class[type="text"]{
+  background: powderblue;
+}
+
+
+.control_1,.control_2,.control_3{
+  width: 500px;
+  height: 200px;
+  background: orange;
+}
+
+.control_1{
+  border: 2px dashed purple;
+}
+
+.control_2{
+  border: 1px solid gray;
+}
+
+.control_3{
+  border: 1px solid red;
+}
+
+*{
+  margin: 5px;
+}
+
+.address:before{
+  content: 'hello';
+}
+.address:after{
+  content: 'hello';
+}
+
+
+
+.h2__test{
+  font-weight: bold;
+  color:white;
+  font-weight: 400;
+  background: rgba(0,0,0,0.5);
+  /* 약축 표현 */
+  /* border: 1px solid blue; */
+  /* 약축 표현 */
+  /* border-right: 3px solid blue;
+  border-bottom: 3px solid red;
+  border-color: purple; */
+
+  /* border: 3px solid blue; */
+
+
+  /* 제가 추천하지 않는 표현 */
+  border-top: 3px solid blue;
+  border-left: 3px solid blue;
+  border-bottom: 3px solid blue;
+  border-right: 3px solid purple;
+
+
+  /* 제가 추천하는 표현 */
+  border: 3px solid blue;
+  border-right: 3px solid purple;
+  border: 100px dotted orange;
+
+}
+/* DIY => 반복을 최소화하라 => 중복을 최소화하라 */

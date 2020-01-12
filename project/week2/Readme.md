@@ -15,10 +15,6 @@
 
 ![nodejs-rest-api-4-638](https://user-images.githubusercontent.com/33567964/72198846-b6730d00-3476-11ea-8a58-44c55d68d8ee.jpg)
 
-
-
-
-
 + Input 태그 종류
 
 ```html
@@ -77,6 +73,21 @@
 
 
 + [Typora 사용해보기](http://support.typora.io/Markdown-Reference/#block-elements)
++ Css 사용법,  Css 문법,
+
+```css
+/*Declaration*/
+h1/*Selectore*/{
+    color:blue;
+   /*Property : value*/
+}
+```
+
++ Selector
+  + Class, Id, Property[type="text"], tag, *종류와 사용법.
++ Group Selector => h1,h2,h3{}
++ File로만 css를 사용해야하는 이유, 인라인 스타일과 스타일 시트의 차이점
++ color, background, border,margin, margin병합, padding, height,width,box-model, text관련 
 
 
 

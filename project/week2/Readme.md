@@ -123,6 +123,7 @@ h1/*Selectore*/{
 + [MDN HTML 파트 중-고급](https://developer.mozilla.org/ko/docs/Web/HTML)
 + [HTML 퀴즈 풀어보기](https://www.w3schools.com/html/html_quiz.asp)
 + [Vscode 단축키](https://demun.github.io/vscode-tutorial/shortcuts/)
++ [HTML & CSS 강의 더 들어보기]([https://www.inflearn.com/course/html-css-%EA%B0%95%EC%A2%8C/lecture/514](https://www.inflearn.com/course/html-css-강좌/lecture/514))
 
 
 

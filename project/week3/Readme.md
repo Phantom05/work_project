@@ -11,9 +11,9 @@
     }
     ```
 
-+ text-align의 center는 자식엘리먼트가 `inline-block`이거나`inline` 엘리먼트일때만 가능합니다.
++ *text-align*의 *center*는 자식엘리먼트가 `inline-block`이거나`inline` 엘리먼트일때만 가능합니다.
 
-+ 레이아웃 구조는 `<diu>`, 의미없는 컨텐츠 - `<span>`
++ 레이아웃 구조는 `<div>`, 의미없는 컨텐츠 - `<span>`
 
 + 접근성 검사 사이트
 

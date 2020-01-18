@@ -1,0 +1,100 @@
+body *{
+  box-sizing: border-box;
+}
+
+.header{
+  
+}
+
+.logo{
+  width: 50%;
+  display: inline-block;
+  background-color: black;
+}
+
+.logo_img{
+  width:25px;
+  height:25px;
+}
+.logo span{
+  color: white;
+}
+
+.info{
+  width: 50%;
+  display: inline-block;
+  float: right; 
+  text-align: right; 
+  background-color: black;  
+}
+ 
+.info a{
+  text-decoration: none;
+  color: white;
+}
+
+/* nav, main, aside, footer 파트 */
+.nav, .main, .aside, .footer{
+  border: 1px solid gray;
+}
+
+.nav{
+  float: left;
+  width: 20%;
+  height: 200px;
+  text-align: center; 
+  background-color: beige;
+}
+
+
+.main{
+  float: left;
+  width: 60%;
+  height : 200px;
+  text-align: center;
+  line-height: 200px;
+  background-color: pink;
+}
+
+.main img{
+  width: 80px;
+  height: 80px;
+  
+}
+
+.aside{
+  float: right;
+  width: 20%;
+  height: 200px;
+  text-align: center;
+  background-color: powderblue;
+}
+
+.aside input[type="text"], .aside input[type="password"]{
+  margin-top: 10px;
+  width: 120px;
+}
+
+.aside input[type="submit"]{
+  background-color: red;
+  border: none;
+  color: white;
+  width: 120px;
+  margin-top: 30px;
+}
+
+.footer{
+  height: 50px;
+  width: 100%;
+  float: left; 
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 20px;
+  background-color: black;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+
+}

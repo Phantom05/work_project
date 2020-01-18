@@ -1,6 +1,6 @@
 # Week3
 
-+ 같은 성질의 css은 class로 묶고 종류가 다를때 class를 추가해서 사용하기
++ 같은 성질의 css은 class로 묶고 종류가 다를때 class를 추가해서 사용해보기
 
   + ```css
     box{
@@ -10,8 +10,6 @@
         color:red;
     }
     ```
-
-  + 
 
 + text-align의 center는 자식엘리먼트가 `inline-block`이거나`inline` 엘리먼트일때만 가능합니다.
 
@@ -23,7 +21,7 @@
   + [접근성 위주](http://wave.webaim.org/)
   + [최적화](https://developers.google.com/speed/pagespeed/insights/)
 
-+ 접근성 수정은 마지막에 하기.
++ 접근성 수정은 마지막에 하는걸 추천
 
 + **box-sizing **
 

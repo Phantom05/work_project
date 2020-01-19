@@ -1,0 +1,233 @@
+
+.hidden{
+  display: none;
+}
+.section_part{
+  margin-top: 20px;
+  border: 1px solid red;
+}
+.content_container{
+  width:400px;
+  margin: auto;
+  border: 1px solid blue;
+  overflow: hidden;
+}
+.content_box{
+  width: calc(100% / 3);
+  border: 1px solid purple;
+  float: left;
+  text-align: center;
+}
+
+.content{
+  display: inline-block;
+  border: 1px solid orange;
+  height: 100px;
+}
+
+@media screen and (max-width:1200px){
+ .content_container{
+   /* width: 100%; */
+ }
+ .content_box{
+   /* width: 100%; */
+ }
+}
+
+.section_part.bg{
+  min-height: 300px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/03/08/19/59/diver-664654_960_720.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(100, 159, 187);
+  background-position: center;
+}
+
+/* 
+*{
+  padding: 0;
+}
+
+.m_list,ul{
+  list-style-type:none
+} */
+
+table{
+  border: 1px solid black;
+}
+th{
+  font-weight: bold;
+}
+
+
+.color_border_red{
+  border: 1px solid red;
+}
+
+.block_e{
+  border: 1px solid red;
+}
+
+.display_none{
+  display: none;
+}
+.opacity_none{
+  opacity: .5;
+}
+.visible_none{
+  visibility: hidden;
+}
+
+/* inline태그라서 변화하지 않음. */
+.inline_style{
+  display: inline-block;
+  width: 50%;
+}
+.최소크기{
+  min-height: 50px;
+  max-height: 100px;
+  background: orange;
+}
+
+
+.min_max_width_test{
+  display: inline-block;
+  min-height: 20px;
+  min-width: 120px;
+  max-width: 200px;
+  background: red;
+}
+
+
+.section_part{
+  position: relative;
+  margin-top: 50px;
+  border: 1px solid brown;
+}
+
+
+.position1{
+  position:relative;
+  min-height: 200px;
+  width: 50%;
+  border: 1px solid orange;
+  margin: auto;
+}
+
+.in_position_ab{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid blue;
+}
+
+
+body{
+  height: 3000px;
+  z-index: 0;
+  background: white;
+}
+
+.recent_box{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 300px;
+  border: 1px solid red;
+  background: white;
+  border-radius: 5px;
+}
+
+.header__nav{
+  position: fixed;
+  height: 60px;
+  background: black;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  left: 0;
+  top:0;
+  z-index: 500;
+  /* z-index: 500000; */
+  /* 9999 */
+  /* 500 */
+  /* 10 단위 */
+}
+.header__nav2{
+  position: fixed;
+  height: 60px;
+  background: green;
+  left: 50%;
+  top:0;
+  transform: translateX(-50%);
+  width: 50%;
+  z-index: 510;
+}
+
+.mobile_header{
+  position: fixed;
+  height: 40px;
+  background: darkgray;
+  color: white;
+  left: 0;
+  top:0;
+  width:100%;
+}
+
+
+@media screen and (max-width:600px){
+  .header__nav,.header__nav2{
+    z-index: -1;
+    display: none;
+  }
+}
+
+
+.overflow_st{
+  width: 200px;
+  height: 100px;
+  border: 1px solid red;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.float_box{
+  border: 1px solid red;
+  margin-top: 50px;
+}
+
+.float_content{
+  border: 1px solid blue;
+  float: right;
+}
+.float_overflow{
+  height: 70px;
+  overflow-y :scroll;
+}
+.float_overflow:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 
+  Float Clearing 
+  1. Overflow
+  2. After
+*/
+
+
+.container{
+  width: 1200px;
+  margin: auto;
+}
+
+@media screen and (max-width:1200px){
+  .container{
+    width:100%;
+  }
+}
+
+/* 15개 20개 */

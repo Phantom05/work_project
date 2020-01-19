@@ -380,12 +380,17 @@
 > 3주차
 >
 > +  Css 텍스트, 포지션, 레이아웃 부분 이해
+> + 미디어 쿼리, 반응형의 이해
+> + Float, Position 의 이해
+> + 중앙정렬, 세로정렬, box-sizing에 대한 이해
+> + 접근성 관련 사이트 설명
+
+> 4주차
+>
 > + 애니메이션, display controll의 이해
 > + form관련 부분, website layout 구조 의 이해
 > + 3D transform, transition 관련 이해
 > + 미디어 쿼리, 반응형의 이해
-
-> 4주차
 
 
 
@@ -396,7 +401,8 @@
 **HomeWork**
 
 - [1주차](https://github.com/Phantom05/work_project/blob/master/project/week1/readme.md)
-- 2주차
+- [2주차](https://github.com/Phantom05/work_project/tree/master/project/week2)
+- [3주차](https://github.com/Phantom05/work_project/tree/master/project/week3)
 
 
 

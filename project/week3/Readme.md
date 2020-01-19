@@ -188,7 +188,7 @@
 
 
 
-+ Case #5*
++ *Case #5*
 
 ![screencapture-templated-co-snapshot-2020-01-19-13_54_15](https://user-images.githubusercontent.com/33567964/72675134-3165a480-3ac3-11ea-92e5-360297cebc73.png)
 
@@ -202,21 +202,68 @@
 
 + *Case #7*
 
+![screencapture-templated-co-visualize-2020-01-19-14_01_47](https://user-images.githubusercontent.com/33567964/72675212-3d059b00-3ac4-11ea-916e-5d28ad7344a8.png)
+
+
+
 + *Case #8*
+
+![screencapture-templated-co-projection-2020-01-19-14_00_17](https://user-images.githubusercontent.com/33567964/72675192-0760b200-3ac4-11ea-8077-4e6612e4b64c.png)
+
+
 
 + *Case #9*
 
+
+
+![screencapture-templated-co-retrospect-2020-01-19-14_03_53](https://user-images.githubusercontent.com/33567964/72675225-8950db00-3ac4-11ea-841a-9502e1deb830.png)
+
+
+
+
+
 + *Case #10*
+
+![screencapture-templated-co-introspect-2020-01-19-14_02_20](https://user-images.githubusercontent.com/33567964/72675216-51499800-3ac4-11ea-9d17-a34b0cb918f3.png)
+
+
 
 + *Case #11*
 
+![screencapture-templated-co-prism-2020-01-19-14_03_24](https://user-images.githubusercontent.com/33567964/72675223-776f3800-3ac4-11ea-968c-12ff90e77f3e.png)
+
+
+
+
+
+
+
 + *Case #12*
+
+![screencapture-templated-co-broadcast-2020-01-19-13_59_29](https://user-images.githubusercontent.com/33567964/72675184-ebf5a700-3ac3-11ea-86f2-2ea9bb602442.png)
+
+[효과 참조](https://templated.co/broadcast)
+
+
 
 + *Case #13*
 
+![screencapture-templated-co-p-7300153616677876-2020-01-19-14_04_55](https://user-images.githubusercontent.com/33567964/72675292-ad142100-3ac4-11ea-83ca-c02998c5dcf4.png)
+
+[효과 참조](https://templated.co/p/7300153616677876)
+
+
+
 + *Case #14*
+
+![screencapture-templated-co-p-7605153616677876-2020-01-19-14_05_29](https://user-images.githubusercontent.com/33567964/72675296-c3ba7800-3ac4-11ea-90a6-7d41bab5e017.png)
+
+[효과 참조](https://templated.co/p/7605153616677876)
+
+
 
 + *Case #15*
 
-  
+![screencapture-templated-co-p-9822153616677876-2020-01-19-14_07_36](https://user-images.githubusercontent.com/33567964/72675314-1005b800-3ac5-11ea-8d2d-1a4f1ace93d8.png)
 
+[효과 참조](https://templated.co/p/9822153616677876)

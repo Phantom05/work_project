@@ -1,0 +1,30 @@
+.btn{
+  position: fixed;
+  top:50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding:5px 10px;
+  cursor: pointer;
+}
+.btn:active{
+  background: gray;
+}
+.picture__sec{
+  background: #ececec;
+  min-height: 200px;
+  padding:20px 15px;
+  margin: 20px;;
+}
+.picture__sec:after{
+  display:block;
+  content: '';
+  clear: both;
+}
+.img_box{
+  float: left;
+  margin:5px;;
+}
+.test_img{
+  width:200px;
+  height: 200px;
+}

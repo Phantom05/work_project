@@ -2,15 +2,18 @@
 
 + 숙제 리뷰
 
-+ Blur처리 진행해보기. [참고 코드](https://github.com/Phantom05/work_project/tree/master/project/week4/example/dim_blur)
++ `blur`처리 진행해보기. [참고 코드](https://github.com/Phantom05/work_project/tree/master/project/week4/example/dim_blur)
 
-+ Float로 정렬하고 clearfix 해보기
++ `float`로 정렬하고 `clearfix` 해보기
 
-+ Float 개념 확실하게 이해하고 넘어가기.
++ `float `개념 확실하게 이해하고 넘어가기.
 
 + 이미지 동그랗게 잘라보기
 
-  + 이미지에 border 씌워보고 이미지를 감싼 box에 border줘보기
+  + 부모로 `overflow`한 케이스.
+  + `img`태그에 `border-radius`한 케이스
+  + 레이어를 겹겹이 쌓아서 만든 원 케이스
+  + 이미지에 `border` 씌워보고 이미지를 감싼 box에 `border`줘보기
 
 + 간단한 예제 live 코칭 진행.
 

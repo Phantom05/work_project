@@ -1,0 +1,87 @@
+/* <div class="circle"></div> */
+.circle{
+  width:150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 1px solid red;
+}
+
+.parent_section{
+  min-height: 300px;
+  background: orange;
+  padding: 10px;
+}
+.parent_section:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.img__box{
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin: 5px;
+  float: left;
+}
+
+
+.center{
+  position: relative;
+  width: 50%;
+  margin: auto;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: right;
+  /* overflow: hidden; */
+}
+.center:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.center_box{
+  float: right;
+  width: 30px;
+  height: 30px;
+  border: 1px solid purple;
+}
+
+.son_out{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: red;
+  right: -30px;
+}
+
+/* 후손 선택자 */
+div p span{
+  color: red;
+}
+div ul li a{
+  color: brown;
+}
+div a{
+  color: aqua;
+}
+
+/* 자식 선택자 ( > ) */
+span > a{
+  color:yellow;
+}
+
+/* 인접 형제 선택자 ( + ) */
+.brother_1 + .brother_3{
+  color: orange;
+}
+.brother_1 + .brother_2{
+  color: green;
+}
+
+/* 일반 형제 선택자 */
+.brother_1 ~ .brother_3{
+  color: orange;
+}

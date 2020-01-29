@@ -45,7 +45,7 @@
     .brother_1 + .brother_2{
       color: green;
     }
-    /* 일반 형제 선택자 */
+    /* 일반 형제 선택자 ( ~ )*/
     .brother_1 ~ .brother_3{
       color: orange;
     }

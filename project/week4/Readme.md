@@ -1,6 +1,6 @@
-## Week4
+# Week4
 
-+ 숙제 리뷰
++ case6까지 숙제 리뷰 진행
 
 + `blur`처리 진행해보기. [참고 코드](https://github.com/Phantom05/work_project/tree/master/project/week4/example/dim_blur)
 

@@ -17,7 +17,7 @@
 
 + 간단한 예제 live 코칭 진행.
 
-  - ![rstghergwegw](https://user-images.githubusercontent.com/33567964/73326919-38e13680-4297-11ea-8315-16ff55d5440d.png)
+  ![rstghergwegw](https://user-images.githubusercontent.com/33567964/73326919-38e13680-4297-11ea-8315-16ff55d5440d.png)
 
 + 선택자 사용해보기
 

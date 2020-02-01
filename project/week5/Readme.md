@@ -115,7 +115,7 @@
 
 
 
-+ 신호등 만들어보기
++ **신호등 만들어보기**
 
 ![rtjrtjethwer](https://user-images.githubusercontent.com/33567964/73587487-ce7eff00-44ff-11ea-9a58-4a48a74835f8.png)
 
@@ -127,6 +127,6 @@
 
 
 
-+ 대쉬보드 레이아웃 잡아보기
++ **대쉬보드 레이아웃 잡아보기**
 
 ![Screen Shot 2018-08-19 at 2 18 27 PM](https://user-images.githubusercontent.com/33567964/73587505-038b5180-4500-11ea-8b92-e91c6390cc64.png)

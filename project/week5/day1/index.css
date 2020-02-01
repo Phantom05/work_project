@@ -1,0 +1,177 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+h1{
+  color:red;
+}
+
+.float__box{
+  position: relative;
+  /* min-height: 200px; */
+  border: 1px solid red;
+  padding: 30px;
+}
+.float__box:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.box{
+  border: 1px solid blue;
+  float: left;
+  min-height: 100px;
+  margin: auto;
+  width:calc(100% / 3);
+}
+
+.box_container{
+
+  /* position: absolute; 
+  left: 50%; 
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width:80%; */
+}
+
+img{
+  opacity: .5;
+  filter: alpha(opacity=50);  
+  /* 브라우저 대응이 되는. */
+  -webkit-transition: .5;
+  -o-transition: .5;
+  transition: .5;
+}
+img:hover{
+  -webkit-transform: rotate(250deg);
+  -ms-transform: rotate(250deg);
+      transform: rotate(250deg);
+} 
+
+
+
+/* 트렌파일러, 테스크러너 */
+/* 프리픽서 */
+/* 그리드, 플렉스는 아직은 시기상조. */
+
+
+
+.nav{
+  padding:10px;
+  border: 1px solid #ececec;
+}
+
+.menu__list{
+
+}
+.menu__link{
+  display: block;
+  padding: 10px;
+  background: #ececec;
+  cursor: pointer;
+  transition: .3s;
+}
+.menu__link:hover{
+  background: green;
+  color: white;
+}
+
+
+.menu__control_1{
+  background: #353535;
+
+}
+.menu__control_1:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.menu__link_1{
+  display: inline-block;
+  float: left;
+  padding:10px;
+  color:white;
+  transition: .3s;
+}
+.menu__link_1:hover{
+  background: black;
+}
+
+.menu__link_1.active{
+  background: green;
+}
+
+
+
+
+.drowdown{
+  margin: 5px;
+  border: 1px solid red;
+}
+.dropdown__button{
+  padding: 5px;
+  background: green;
+}
+.dropdown__nav{
+  display: none;
+}
+.drowdown:hover .dropdown__nav{
+  display: block;
+}
+
+
+a[target="_blank"]{
+  color: red;
+}
+
+
+input[type="text"]{
+  color:red;
+}
+
+
+.form{
+  margin: 20px 0;
+  padding:15px;
+  background: #ececec;
+}
+.form__input{
+  width: 100%;
+  border-radius: 3px;
+  border: 0;
+  padding: 5px;
+}
+.form__group{
+  margin-bottom: 15px;
+}
+.label__title{
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* SECTION: */
+
+.input__box{
+  position: relative;
+}
+.input__box:after{
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom:0;
+  transform: translateX(-50%);
+  height: 2px;
+  background: blue;
+  width:0;
+  transition: .3s;
+}
+
+.input__box:hover:after{
+  width:100%;
+}
+
+html{
+  font-size:30px;
+}
+.rem__text{
+  font-size: 3rem;
+}

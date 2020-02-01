@@ -1,0 +1,158 @@
+
+html{
+  background: linear-gradient(#08f, #fff);
+  height: 100%;
+  margin: 0 auto;
+}
+
+.traffic__box{
+  position: relative;
+  border: 3px solid gray;
+}
+.traffic__box:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.traffic__box.lignt1{
+  width:700px;
+  height: 220px;
+  border-radius: 20px;
+  background: #353535;
+  margin: 20px auto;
+}
+
+.traffic__box.lignt2{
+  position: relative;
+  width:300px;
+  height: 400px;
+  border-radius: 20px;
+  background: #353535;
+  margin: 20px auto;
+  text-align: center;
+  padding: 30px;
+}
+
+
+.lignt2::after{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top:100%;
+  width:50px;
+  background: #353535;
+  height: 400px;
+}
+.box{
+  position: relative;
+  
+}
+.traffic__box.lignt1 .box{
+  width:calc(100% / 3);
+  float: left;
+  height: 100%;
+}
+
+.item{
+  display: inline-block;
+  width:150px;
+  height:150px;
+  border-radius: 100%;
+}
+.traffic__box.lignt1 .item{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+.traffic__box.lignt2 .item:first-child{
+  margin-bottom: 30px;
+}
+
+.lignt1 .item.red{
+  background: red;
+  box-shadow : 0px 0px 30px 0px red;
+  animation: 13s red1 infinite;
+}
+.item.yellow{
+  background: yellow;
+  box-shadow : 0px 0px 30px 0px yellow;
+  animation: 13s yellow1 infinite;
+}
+.item.blue{
+  background: blue;
+  box-shadow : 0px 0px 30px 0px blue;
+  animation: 13s blue1 infinite;
+}
+
+
+.lignt2 .item.red{
+  background: red;
+  box-shadow : 0px 0px 30px 0px red;
+  animation: 13s red2 infinite;
+}
+.item.green{
+  background: green;
+  box-shadow : 0px 0px 30px 0px green;
+  animation: 13s green2 infinite;
+}
+
+
+
+
+
+
+@keyframes red1{
+  0%{opacity: 1}
+  20%{opacity: 1}
+  40%{opacity: 1}
+
+  60%{opacity: .1}
+  100%{opacity: .1}
+}
+
+@keyframes yellow1{
+  0%{opacity: .1}
+  20%{opacity: .1}
+  40%{opacity: .1}
+
+  60%{opacity: 1}
+  
+  80%{opacity: .1}
+  100%{opacity: .1}
+}
+
+@keyframes blue1{
+  0%{opacity: .1}
+  20%{opacity: .1}
+  40%{opacity: .1}
+  
+  60%{opacity: .1}
+
+  80%{opacity: 1}
+  100%{opacity: 1}
+}
+
+@keyframes red2{
+  0%{opacity: .1}
+
+  35%{opacity: .1}
+  60%{opacity: 1}
+
+}
+
+@keyframes green2{
+  0%{opacity: 1}
+  5%{opacity: .1}
+  10%{opacity: 1}
+  15%{opacity: .1}
+  20%{opacity: 1}
+  25%{opacity: .1}
+  30%{opacity: 1}
+  35%{opacity: .1}
+  40%{opacity: 1}
+
+  45%{opacity: .1}
+  100%{opacity: .1}
+}

@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+
+$shallow_gray : #ececec;
+$fontSize :12px;
+$boxFontSize : 30px;
+$boxLineHeight : 30px;
+$text : 'hello';
+
+@mixin floatClear {
+  &:after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+@mixin calcWidth($n) {
+  width:calc(100% / #{$n});
+}
+
+body{
+  background: $shallow_gray;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  .sub_title{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    // font:{
+    //   size:20px;
+    //   weight:400;
+    //   family:
+    // }
+  }
+}
+
+.container{
+  border: 1px solid blue;
+  @include floatClear;
+  &-hello{
+    height: 100px;
+    background: purple;
+  }
+}
+
+.box{
+  $w : 120px;
+  float: left;
+  @include calcWidth(3);
+  height: 200px;
+  background: orange;
+  margin: 5px;
+
+  &.#{$text}{
+    color: red;
+  }
+  &-#{$text}{
+    color: red;
+  }
+  @at-root .list{
+    width:$w;
+  }
+
+}
+
+$family: unquote("Droid+Sans");
+@import url("http://fonts.googleapis.com/css?family=#{$family}");
+
+
+

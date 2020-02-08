@@ -404,7 +404,10 @@
 >   + 스코프
 >   + root에 대한이해
 
-
+> 6주차
+>
+> + 자주 사용하는 속성 믹스인으로 만들기
+> + section, wrap 구조파악
 
 
 
@@ -417,6 +420,7 @@
 - [3주차](https://github.com/Phantom05/work_project/tree/master/project/week3)
 - [4주차](https://github.com/Phantom05/work_project/tree/master/project/week4)
 - [5주차](https://github.com/Phantom05/work_project/tree/master/project/week5)
+- [6주차](https://github.com/Phantom05/work_project/tree/master/project/week6)
 
 
 

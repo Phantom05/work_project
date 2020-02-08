@@ -1,0 +1,148 @@
+
+
+@mixin positionHeightCenter{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+@mixin positionWidthCenter{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+@mixin positionCenterCenter{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin font($fontSize:14px,$color:black){
+  font-family: sans-serif;
+  font-size: $fontSize;
+  color: $color;
+  @content;
+}
+
+@mixin floatClear{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin calcWidthFloat($size){
+  float: left;
+  width: calc(#{$size});
+}
+
+@mixin mediaPositionDisable{
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: none;
+}
+
+$headerHeight: 70px;
+
+body{
+  padding-top: $headerHeight;
+}
+
+.main__section{
+  border: 1px solid red;
+  padding: 30px;
+  .main__section_title{
+    @include font(30px,#333){
+      font-weight: bold;
+    }
+    margin-bottom: 20px;
+    &.center{
+      text-align: center;
+    }
+  }
+  .main__section_subtitle{
+    margin-bottom: 20px;
+    @include font(16px,#818181);
+  }
+}
+
+.wrap{
+  position: relative;
+  width:800px;
+  margin: auto;
+  border: 1px solid blue;
+  min-height: 400px;
+}
+
+.content{ 
+  position: relative;
+  &.centerCenter{
+    @include positionCenterCenter;
+  }
+  &.heightCenter{
+    @include positionHeightCenter;
+  }
+  &.widthCenter{
+    @include positionWidthCenter;
+  }
+}
+
+.main__header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border: 1px solid red;
+  height: $headerHeight;
+  background: black;
+  z-index: 500;
+  .main__logo{
+    @include positionHeightCenter;
+    left:20px;
+  }
+
+  .main__logo_link{
+    @include font(20,red){
+      font-weight: bold;
+    }
+  }
+
+  .menu__box{
+    @include positionHeightCenter;
+    right: 20px;
+  }
+
+  .menu__content{
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+.img__box{
+  @include floatClear;
+  .img{
+    @include calcWidthFloat(100% / 3);
+  }
+}
+
+@media screen and (max-width:800px){
+  .wrap{
+    width:100%;
+  }
+  .img__box{
+    .img{
+      @include calcWidthFloat(100% / 2);
+    }
+  }
+
+  .content{
+    &.centerCenter{
+      @include mediaPositionDisable;
+    }
+  }
+  
+}

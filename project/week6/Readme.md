@@ -1,9 +1,5 @@
 # Week6
 
-+ ***case 9***
-
-  + 섹션안에 
-
 + `container`, `wrap` 클래스의 기능 이해
 
   ```css

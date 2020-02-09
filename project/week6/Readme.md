@@ -109,13 +109,11 @@
 + 체크 시 슬라이드 기능 이해
 
   ```html
-    <input 
-      type="checkbox"
-      class="test"
-    >
-    <div class="menu">
-      나 메뉴
-    </div>
+   <input type="checkbox" class="test">
+   <div class="menu">나 메뉴</div>
+  ```
+
+  ```scss
   .menu{
     position: fixed;
     width:200px;

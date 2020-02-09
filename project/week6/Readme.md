@@ -106,9 +106,91 @@
 
 + `header`, ` nav`, ` section`은 동일한 위치의 레벨로 보고 코딩하기
 
++ 체크 시 슬라이드 기능 이해
 
+  ```html
+    <input 
+      type="checkbox"
+      class="test"
+    >
+    <div class="menu">
+      나 메뉴
+    </div>
+  .menu{
+    position: fixed;
+    width:200px;
+    height: 100%;
+    background: black;;
+    right: -200px;
+    top:0;
+    color: white;
+    transition: .5s;;
+  }
+  
+  .test:checked + .menu{
+    right: 0;
+  }
+  ```
 
++ scss `@import partial system `이해
 
+  ```scss
+  @import './reset.scss';
+  @import './mixin';
+  ```
+
++ scss의 이해
+
++ [SCSS 공식 사이트](https://sass-lang.com/documentation)
+
+  + `@extend`
+  + `@function`
+  + `@if, @else if`
+  + `@for`
+  + `@each`
+  + `@while`
+
++ 부트스트랩
+
+  + container 설명, 
+    + padding-none,
+    + margin-none 필요
+  + 부트스트랩 임포트의 이해
+  + 공식 문서 사이트
+    + [부트스트랩](http://bootstrapk.com/)
+    + [제이쿼리](https://jquery.com/)
+  + 테이블
+  + 폰트
+  + 폼
+  + 버튼
+  + 부트 스트랩 커스터마이징 이해
+
+  ```scss
+  .btn-mybtn{
+    background: purple;
+    color: white;
+    transition: .3s;
+    &:hover{
+      color: white;
+      background: #5c015c;
+    }
+  }
+  ```
+
+  
+
++ 웹 접근성 hidden 에 대해 설명
+
+```html
+<span class="screen-hidden">email</span>
+<input type="text" placeholder="email"> <br> 
+```
+
++ 그리드 시스템의 이해
++ css 방법론의 이해
+  + SMACSS
+  + BEM
++ 하나만 더 골라보기
 
 
 
@@ -118,3 +200,12 @@
 + 섹션 파트 `wrap`이용하여 구조 잡아보기
 + 템플릿 사이트에서 scss있는 파일 다운받아 클론 코딩 해보고 코드 비교해보기
 + [템플릿 사이트](https://templated.co/)
++ 대쉬 보드 코딩해보기, 부트 스트랩 `Grid layout`을 이용하여 코딩해보기.
+
++ ***Case 16***
+
+![screencapture-templated-co-p-5302153616677877-2020-02-09-13_40_43](https://user-images.githubusercontent.com/33567964/74096386-cb0ff700-4b41-11ea-9530-9c20568a0216.png)
+
+
+
++ [참고](https://templated.co/p/5302153616677877)

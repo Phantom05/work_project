@@ -1,0 +1,46 @@
+
+
+@mixin positionHeightCenter{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+@mixin positionWidthCenter{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+@mixin positionCenterCenter{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin font($fontSize:14px,$color:black){
+  font-family: sans-serif;
+  font-size: $fontSize;
+  color: $color;
+  @content;
+}
+
+@mixin floatClear{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin calcWidthFloat($size){
+  float: left;
+  width: calc(#{$size});
+}
+
+@mixin mediaPositionDisable{
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: none;
+}

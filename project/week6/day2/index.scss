@@ -1,0 +1,99 @@
+@import '../../base/main';
+
+
+
+.box{
+  @include calcWidthFloat(100% / 3);
+}
+
+
+.test{
+  font-size: 12px;
+  color: #333;
+  letter-spacing: 10px;
+}
+
+.test1{
+  @extend .test;
+  color: brown;
+  font-weight: bold;
+}
+
+%floatClear{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin test(){
+  font-weight: bold;
+  @content;
+}
+
+.content_tx{
+  @include test(){
+    color: red;
+  }
+}
+
+// NOTE: 확장
+.control{
+  @extend %floatClear;
+}
+// NOTE: Media query extend사용할 수 없음.
+
+
+
+// NOTE: 함수
+@function calc-width($size){
+  @return ($size + 20%);
+}
+
+.test_calc{
+  width:calc-width(100% / 2);
+}
+
+// NOTE: 조건문
+@mixin cardBox($color:'black'){
+  width:200px;
+  height: 200px;
+  @if $color == 'black'{
+    background: black;
+  } @else if $color == 'red'{
+    background: red;;
+  }
+}
+
+.card{
+  &.black{
+    @include cardBox('black');
+  }
+  &.red{
+    @include cardBox('red');
+  }
+}
+
+// 1 2 3 4 5 
+// NOTE: 반복문
+@for $a from 1 through 3{
+  .list-#{$a}{
+    padding-left: 10px * $a;
+  }
+}
+
+@each $animal in puma ,cat, dog, panda {
+  .#{$animal}-icon{
+    padding: 1px;
+    background: url('/images/#{$animal}.png');
+  }
+}
+
+$j : 6;
+@while $j >0 {
+  .item-#{$j}{
+    width:2rem * $j;
+  }
+  $j:$j - 2;
+}

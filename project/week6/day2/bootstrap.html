@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./bootstrap.css">
+
+</head>
+
+<!-- 
+  container , container-fluid
+  col, => row col//
+  grid 12개를 기준으로 화면을 나눈다.
+ -->
+
+<body>
+
+  <div class="bg" style="background: orange;">
+    <div class="container">
+      Test
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <!-- <div class="row">
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-6 col-xs-12">
+        <div class="box">
+          col-12
+        </div>
+      </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box">
+          Content
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box">
+          Content
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box">
+          Content
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="box red">
+          Content
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="box red">
+          Content
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 ">
+        <div class="box">Hello</div>
+      </div>
+    </div>
+
+
+
+    <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+    당신은 <mark>강조할</mark> 텍스트에 mark 태그를 사용할 수 있습니다.
+    <del>이 텍스트줄은 삭제된 텍스트로 다뤄짐을 의미합니다.</del>
+    <u>이 텍스트줄은 밑줄이 그어질것입니다</u>
+
+
+    <p class="text-left">좌측정렬된 텍스트.</p>
+    <p class="text-center">중앙정렬된 텍스트.</p>
+    <p class="text-right">우측정렬된 텍스트.</p>
+    <p class="text-justify">양쪽정렬된 텍스트.</p>
+    <p class="text-nowrap">그냥 텍스트.</p>
+
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>
+    <p class="text-capitalize">Capitalized text.</p>
+
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>No.1</th>
+          <th>Title</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="success">
+          <td>01</td>
+          <td>코로나</td>
+          <td>서울, 부산</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>코로나</td>
+          <td>서울, 부산</td>
+        </tr>
+        <tr class="danger">
+          <td>03</td>
+          <td>코로나</td>
+          <td>서울, 부산</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <form action="">
+      <input type="text" class="form-control">
+    </form>
+
+    <a href="" class="btn btn-mybtn btn-sm clfix">Hello</a>
+
+
+    <div class="form_wrap clfix">
+      <form action="">
+        <div>
+          <input type="text" class="form-control" placeholder="email">
+        </div>
+        <div>
+          <input type="password" class="form-control" placeholder="password">
+        </div>
+        <div>
+          <button class="btn btn-default btn-block" disabled="disabled">Login</button>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- clearfix -->
+    <div class="test__box clfix hidden">
+      <div class="test__box2">
+        Box1
+      </div>
+      <div class="test__box2">
+        Box2
+      </div>
+    </div>
+ 
+    <span class="screen-hidden">email</span>
+    <input type="text" placeholder="email"> <br> 
+    <input type="password"> <br>
+    <button>Login</button>
+
+  </div>
+
+</body>
+
+</html>

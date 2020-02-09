@@ -1,0 +1,64 @@
+@import '../../base/main';
+
+.padding-none{
+  padding: 0 !important;
+}
+.margin-none{
+  margin: 0 !important;
+}
+
+.box{
+  border: 1px solid #ececec;
+  padding:15px;
+  &.red{
+    border: 1px solid red;
+  }
+}
+
+
+.btn-mybtn{
+  background: purple;
+  color: white;
+  transition: .3s;
+  &:hover{
+    color: white;
+    background: #5c015c;
+  }
+}
+
+.form_wrap{
+  width:300px;
+  margin: auto;
+}
+
+
+.test__box{
+  border: 1px solid red;
+}
+.test__box2{
+  float: left;
+  width:50%;
+}
+
+
+.clfix{
+  @include floatClear;
+}
+
+// .test__box2{
+
+//   &.red{
+//     background: red
+//   }
+//   &.blue{
+//     background: blue
+//   }
+// }
+
+
+
+.screen-hidden{
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}

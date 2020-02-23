@@ -1,0 +1,272 @@
+@import '../../base/main';
+@import './vari';
+@import './com';
+@import './mixin';
+
+
+@include setSpace(1,10,'top');
+
+
+// NOTE: section1
+
+.pp__top_main{
+  @include floatClear;
+  // border: 1px solid blue;
+  color: white;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  width: calc(100% - 20px);
+  margin: auto;
+}
+.pp__top_main_box{
+  position: relative;
+  float: left;
+  width:calc(100% / 2);
+  height: 100%;
+  overflow: hidden;
+}
+.pp__top_main_dim{
+  @include positionWide;
+  // transition: opacity 1s ease,transform 1s ease,margin-top 0.325s ease;
+  // opacity: 0;
+  // outline: 0;
+  left: -20%;
+  top: -20%;
+  width: 200%;
+  height: 200%;
+  filter: blur(5px);
+}
+.pp__top_main_dim_black{
+  @include positionWide;
+  background: rgba(0,0,0,.7);
+  z-index: 1;
+}
+.pp__top_main_inner{
+  z-index: 10;
+  &.tx{
+    @include positionCenterCenter;
+    width: 80%;
+  }
+  &.image{
+    position: relative;
+    width: 380px;
+    height: 100%;
+    margin: auto;
+    top: 50px;
+    transition: 1s;
+    &:hover{
+      top:30px;
+    }
+  }
+}
+.pp__top_main_image_an{
+  display: block;
+}
+.pp__top_main_title{
+  @include font(35px,'white');
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.pp__top_main_sub_title{
+  @include font(15px,'white');
+  font-style: italic;
+  margin-bottom: 25px;
+}
+.pp__top_main_sub_sub_info{
+  @include font(14px,'white');
+  margin-bottom: 20px;
+}
+.pp__top_main_btn_con{
+  margin-bottom: 25px;
+  @include floatClear;
+}
+.pp__top_main_btn_box{
+  float: left;
+  width: calc(100% / 2);
+  padding: 0 10px;
+  text-align: center;
+  &:first-child{
+    padding-left:0;
+  }
+  &:last-child{
+    padding-left:0;
+  }
+}
+.pp__top_main_date{
+  @include font(14px,'white');
+  line-height: 17px;
+}
+.pp__top_main_link{
+  display: inline-block;
+  @include pp__btn();
+}
+.pp__top_main_tag{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  background: $shallow_pink;
+  @include font(13px,'white');
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+// NOTE: seciton2
+.pp__item{
+  @include calcWidthfloat(3);
+  float: left;
+  padding: 10px;
+}
+
+
+.pp__item_img{
+  width:100%;
+  height: 100%;
+}
+.pp__content{
+  padding:10px;
+  cursor: pointer;
+  background: white;
+  &:hover .pp__inner_dim{
+    opacity: 1;
+  }
+}
+.pp__inner_box{
+  &.image{
+    position: relative;
+  }
+  &.info{
+    border-top: 1px solid #ececec;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+.pp__dim_con{
+  @include positionCenterCenter;
+  width: 70%;
+}
+.pp__dim_link{
+  display: inline-block;
+  text-align: center;
+  @include pp__btn();
+}
+.pp__dim_row{
+  margin-bottom: 10px;;
+}
+.pp__inner_dim{
+  @include positionWide;
+  background: rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .3s;
+}
+.pp__dim_info, .pp__dim_date{
+  @include font(13px,#dfdfdf);
+  line-height: 15px;
+  text-align: center;
+}
+
+.pp__inner_info_box{
+  @include floatClear;
+}
+.pp__inner_info{
+  float: left;
+  @include font(14px);
+  &.type{
+    text-align: left;
+    font-weight: bold;
+    width:30%;
+  }
+  &.sort{
+    text-align: right;
+    width:70%;
+    @include dotdotdot;
+    @include font(13px,gray);
+  }
+}
+
+.pagination{
+  text-align: center;
+}
+.pagination_box{
+  display: inline-block;
+  @include floatClear;
+}
+.pagination_item{
+  float: left;
+  margin-right: 10px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.pagination_an{
+  $buttonSize:110px;
+  display: inline-block;
+  padding:15px;
+  border-radius: 5px;
+  background: white;
+  font-weight: bold;
+  @include font(14px);
+  border: 2px solid white;
+  transition: .3s;
+  &.possible{
+    background: $aqua;
+  }
+  &.disable{
+    background: $shallow_gray;
+    cursor: no-drop;
+  }
+  &.btn{
+    color: white;
+    width: $buttonSize;
+    border: 0;
+  }
+  &.active{
+    color: $pink;
+    border: 2px solid $pink;
+  }
+  &:hover:not(.btn){
+    color: $aqua;
+    border: 2px solid $deep_aqua;
+  }
+}
+
+
+// NOTE: Media query
+@media screen and (max-width:$device_pc){
+  .wrap{
+    width:90%;
+  }
+  .pp__item{
+    @include calcWidthfloat(3);
+  }
+}
+
+@media screen and (max-width:$device_tablet){
+  .pp__item{
+    @include calcWidthfloat(2);
+  }
+  .pp__top_main_inner.image{
+    width: 80%;
+  }
+  .pp__top_main{
+    padding: 20px 0 ;
+    height: auto;
+  }
+  .pp__top_main_box{
+    width: 100%;
+    float: none;
+  }
+  .pp__top_main_inner.tx{
+    @include positionDisable;
+    margin: auto;
+    padding: 20px 0;;
+  }
+}
+@media screen and (max-width:$device_mobile){
+  .pp__item{
+    @include calcWidthfloat(1);
+  }
+}

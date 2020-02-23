@@ -437,6 +437,8 @@
 - [4주차](https://github.com/Phantom05/work_project/tree/master/project/week4)
 - [5주차](https://github.com/Phantom05/work_project/tree/master/project/week5)
 - [6주차](https://github.com/Phantom05/work_project/tree/master/project/week6)
+- [7주차](https://github.com/Phantom05/work_project/tree/master/project/week7)
+- [8주차](https://github.com/Phantom05/work_project/tree/master/project/week8)
 
 
 

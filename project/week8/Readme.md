@@ -1,4 +1,4 @@
-# week8
+# Week8
 
 + 코드리뷰
   + Case 15

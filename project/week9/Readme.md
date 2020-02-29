@@ -22,8 +22,8 @@
 
 + Element hover에 대한 구조 설명
 
-  + .card:hover는 각 컨택스트에 있는 엘리먼트들의 가지고있는 .card일때 호버한 내부로 들어가 각 card아래만 hover가 되고 
-  + 이해를 돕기위해 .card를 감싸고 있는 부모에 class를 하나주고 hover시 .card의 배경을 black으로 바꼇을때 부모 엘리먼트의 컨텍스트알에 모든 card이기 대문에 호버 되는 부분 확인
+  + `.card:hover`는 각 컨택스트에 있는 엘리먼트들의 가지고있는 `.card`일때 호버한 내부로 들어가 각 `.card`아래만 `hover`가 되고 
+  + 이해를 돕기위해 `.card`를 감싸고 있는 부모에 `class` 를 하나주고 `hover`시 `.card`의 배경을 `black`으로 바꼇을때 부모 엘리먼트의 컨텍스트알에 모든 `card`이기 대문에 호버 되는 부분 확인
 
   ```html
   <div class="row test_context">

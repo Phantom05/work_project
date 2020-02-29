@@ -1,0 +1,106 @@
+@import '../../base/main';
+
+.img{
+  position: relative;
+  display: inline-block;
+  width: 300px;
+}
+.img:after{
+  position: relative;
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqKXiTsJZwzKMmc3zBsFhf2JO-qKbPp2mM81-jY4WoaI0ziGvl');
+}
+body{
+  background:black;
+  color:white;
+}
+
+.footer{
+  @include floatClear;
+}
+
+.box{
+  width:calc(100% / 3);
+  float: left;
+  border: 1px solid red;
+}
+
+.box__list_con{
+  @include floatClear;
+}
+
+.box__list{
+  float: left;
+  width:calc(100% / 2);
+  padding:5px 0;
+  &:last-child{
+    color:gray;
+  }
+}
+.box__list_an{
+  display: block;;
+  color:white;
+  &:hover{
+    text-decoration: underline;;
+  }
+}
+
+
+.slide{
+  width:300px;
+  height: 300px;
+  border: 1px solid red;
+  margin: auto;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.slide_con{
+  position: relative;
+  width:900px;
+  height: 100%;
+  // background:  blue;
+  animation: slide 8s ease  infinite;
+  @include floatClear;
+}
+.slide_item{
+  width:300px;
+  height: 100%;
+  float: left;
+  &.first{
+    background: pink;
+  }
+  &.second{
+    background: orange;
+  }
+  &.third{
+    background: brown;
+  }
+
+}
+@keyframes slide{
+  0%{
+    left:0;
+  }
+  25%{
+    left:0;
+  }
+  50%{
+    left:-300px;
+  }
+  75%{
+    left:-600px;
+  }
+}
+
+.check_one:checked{
+  bottom:-300px;
+}
+.check_one{
+  width:300px;
+  height:300px;
+  position: relative;
+  background: pink;
+}

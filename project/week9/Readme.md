@@ -103,7 +103,7 @@
     + `lastIndexOf` 속성설명
     + `repeat`메서드 설명
     + `slice` 메서드 설명
-    + `substring`메서드 설명
+    + `substring`메서드 설명 
 
 
 

@@ -34,7 +34,7 @@ console.log(0.5 + 0.6);
 console.clear();
 
 
-// 선형 프로그래밍
+// NOTE: 선형 프로그래밍
 let x, y, z;
 x = 5; y = 6;
 // int x 
@@ -63,7 +63,7 @@ let lastName = "Chris";
 let firstname = "Brown";
 console.log(
   lastName + firstname
-);
+); 
 
 // Change Comment
 /*

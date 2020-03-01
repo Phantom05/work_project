@@ -44,7 +44,66 @@
 
   
 
++ 자바스크립트
+  + `script` 파일 임포트 방법
+  + document가 무엇인가?
+  + `innerHTML`,`document.wirte` 의 사용방법
+  + `window`객체와 `alert`함수 설명
+  + console의 활용법
+    + log, dir
+  + `<script`>태그의 위치와 설명
+  + 선형 프로그래밍 설명
+  + 주석처리 방법
+    +  한줄주석 `//` 여러줄주석 `/* */`
+  + 자바스크립트의 공백, 개행 설명
+  + 스트링의 종류 설명 <code>' ', " ", ``</code> 
+  + 변수의 선언방법과 종류 설명
+    + `var, let, const`
+    + 할당과 재할당, 변수의 연산 조합
+  + 산술 연산자 설명
+    + `+, -, *, /,**, %, ++, --`
+  + 할당 연산자 설명
+    + `=, +=, -=, *=, /=, %=, **=`
+  + 문자열 연산자 설명
+    + 문자열 + 숫자의 설명
+  + 비교 연산자 설명
+    + `==, ===, !=, !==, >, <, >=, <=`
+  + 논리 연산자 설명
+    + `&&, ||, !`
+  + 자바스크립트 유형 연산자 설명
+    + `typeof`
+  + 데이터 유형 설명
+  + `Object, String, Number, function, null은 Object, Array도 Object`
+  + 함수 설명
+    + 매개변수, 파라미터, 인자, 인수 설명
+    + `return` 반환에 대한 설명
+  + 객체 설명
+    + 키와 값의 쌍으로 이루어진점 설명
+    + 값을 가져오는방법, 닷노테이션 설명
+    + 메서드의 설명
+    + 메서드 안에서의 `this` 설명
+  + 간단한 html내의 property 이벤트 설명
 
+```html
+
+  <h1 id="demo">Hello Javascript!</h1>
+  <button 
+    onmouseover="document.getElementById('demo').innerHTML= Date()"
+    onclick="document.getElementById('demo').innerHTML= Date()"
+  >The time is?</button>
+```
+
++ + 이스케이프 설명
+    + `\, \\, \n, \t, \b`
+  + 문자열 메서드 설명
+    + `String`객체의 구조 설명
+    + string 타입의 String 객체 상속 설명
+    + `length` 속성
+    + `indexOf` 속성
+    + `lastIndexOf` 속성설명
+    + `repeat`메서드 설명
+    + `slice` 메서드 설명
+    + `substring`메서드 설명
 
 
 
@@ -54,7 +113,8 @@
   + 애니메이션으로 만들어보기
   + checked시 움직이는 슬라이드 만들어보기.
 
-+ 
++ [생활코딩 자바스크립트 WEB2 듣기 시작하기](https://opentutorials.org/course/3085)
++ [W3C school 문자열 메소드 까지 따라 해보기!](https://www.w3schools.com/js/default.asp)
 
 
 
@@ -64,3 +124,5 @@
 
 - 잔여 : 1h 30m
 -  (다음주) 같이만들어본 사이트, 슬라이드 코드리뷰
+
++ 

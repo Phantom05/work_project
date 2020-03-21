@@ -40,7 +40,6 @@
 @mixin setSpace($i:1px,$jump:2,$type:'top') {
   @while  $i <= $jump {
     .space-#{$type}-#{$i*$jump}{
-      
       margin-#{$type}: (1px * $i) * $jump;
     }
     $i: $i+1;

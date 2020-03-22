@@ -2,7 +2,7 @@
 
 + week8 간단한 코드 리뷰 복습
 
-+ for 반복문
++ **for**반복문
 
   + 초기값, 조건식, 증감문
 
@@ -143,15 +143,203 @@
   }
   ```
 
++ 간단한 문제 풀어보기 #1
+
+```js
+// NOTE: 문제 1
+// 년식이 1씩 다 증가를 해버린상황. 
+// 년식을 1씩 줄여야하는 코드를 짜야함.
+// new_Volvoe 올바른 년식에 +1씩한 데이터들을 추가해야함.
+
+var arr = [
+  { type: "Volvo", year: 2019 },
+  { type: "BMW", year: 2020 },
+  { type: "Benz", year: 2020 },
+  { type: "TOYOTA", year: 2017 }
+];
+
+var arr1 = [
+  { type: "현대", year: 2019 },
+  { type: "시보레", year: 2020 },
+  { type: "대우", year: 2020 },
+];
+
+var makeNewList = arr => {
+
+  const new_list = arr.map(item => {
+    item.year = item.year - 1;
+    return item;
+  });
+
+  new_list.forEach(item => {
+    const newObj = { type: `new_${item.type}`, year: item.year + 1 };
+    new_list.push(newObj);
+  });
+
+  return new_list;
+}
+
+console.log(
+  makeNewList(arr1)
+);
+```
+
++ 간단한 문제 풀어보기 #2
+
+```js
+// NOTE: 문제 2 구구단 출력하기!
+var gogodan = dan => {
+  let res = '';
+  for (let i = dan; i < 10; i++) {
+    for (let j = 1; j < 10; j++) {
+      res += `${i} x ${j} = ${i * j}\n`;
+    }
+    res += `\n`;
+  }
+  return res;
+}
+
+console.log(
+  gogodan(2)
+);
+
+```
+
++ `Date` 객체 사용해보기
+  + Date사용하여 요일가져와보기,
+  + Date객체 사용하여 년도 가져와보기
++ `moment` 라이브러리 사용해보기
++ `Math`  빌트인 함수 사용해보기
+  + `Math.PI`
+  + `Math.round(4.5)`
+  + `Math.pow(2,3)`
+  + `Math.sqrt(64)`
+  + `Math.ceil(4.1)`
+  + `Math.floor(2.9)`
+  + `Math.min(0,150,30,-8,200)`
+  + `Math.max(0,150,30,-8,200)`
+  + `Math.abs(-10)`
++ `setInterver`맛보기
++ 자바스크립트 `Boolean`살펴보기
+  + ` 0, "", undifend, null, false,NaN` => false, 이외의것은 모두 true
++ `if` 문 안쪽으로는 아래와 같이 사용하기
+
+```js
+ const isValueTrue = !!value;
+ if(isValueTrue){
+
+ }
+```
+
++ 멘데토리 설명
++ `if, else if , else` 사용하여 요일 출력해보기
++ `무한 루프 이용하여 프로그램 만들어보기`
+
+```js
+// 버튼하나 만들고, 버튼을클릭했을때, propmt창이뜨는데,
+// 이름을 master라고 했을때,
+// 환영합니다 master님 이라는 알람을띄우고
+// 이름이 master가 아닐떄, 
+// 주인님이 아닙니다. 알람을 띄우기
+// 아무것도 입력하지않고 확인 눌렀을때, 이름을 입력해주세요. 라고 알람이뜨고
+// 다시 propmt창이 뜨기,
+// 취소를누르면 그냥 프로그램 종료
+
+document.getElementById('btn').addEventListener('click',function(e){
+  let isLoop = true;
+  while(isLoop){
+    const propmtName   = prompt('이름을 입력해주십시오.');
+    const isNotNull    = propmtName !== null;
+    const isNameMaster = propmtName === 'master';
+    if(isNotNull){
+      if(isNameMaster){
+        alert(`환영합니다. ${propmtName}님`);
+        isLoop = false;
+      }else{
+        alert('이름을 확인해주세요.');
+      }
+    }else{
+      isLoop = false;
+    }
+  }
+});
+```
+
++ `switch` 문 사용해보기
+
++ `for, for/in, for/of, while, do/while` 사용해보기
+
+  + `for` 문 기교 사용해보기
+
+  ```js
+  var number = 10;
+  for (; number--;) {
+    console.log(number);
+  }
   
+  for (;;) {
+    number++;
+    if (number % 2 === 0) {
+      continue
+    }
+  
+    if (number >= 10) {
+      break;
+    }
+  }
+  ```
+
+  
+
+  + `for/in, for/of` 사용해보기
+
+  ```js
+  for(var key in person){
+    console.log(key, person[key]);
+  }
+  console.clear();
+  
+  var cars = ['BMW', 'Volvo', 'Mini'];
+  
+  for(var item of cars){
+    console.log(item);
+  };
+  cars.forEach(item=>{
+    console.log(item);
+  });
+  ```
+
++ 정규식 사용해보기
+
+  + 이메일 정규식
+
+  ```js
+  
+  function regEmail(value){
+    var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    return regExp.test(value)
+  }
+  
+  document.getElementById('emailBtn').addEventListener('click',function(){
+    const emailInputValue = document.getElementById('email').value;
+    const isRegEmail = regEmail(emailInputValue);
+    if(isRegEmail){
+      console.log('이메일 정규식 통과');
+    }else{
+      alert('이메일을 확인해주세요.')
+    }
+  });
+  ```
+
+  + [정규식](https://regexone.com/problem/matching_decimal_numbers) 공부해보기
 
 
 
 + 숙제
 
-  + 같이만들어본 사이트 코딩해보기
+  + <del>같이만들어본 사이트 코딩해보기</del>
 
-  + css로 슬라이드 만들어보기
+  + <del>css로 슬라이드 만들어보기</del>
 
   + week8 코드 분석해보기
 
@@ -175,9 +363,14 @@
 
 <hr>
 
-10week :
+10week : 총 잔여 9h 30m
 
-- 잔여 : 7h 30m
++ 1day
+  + +2h
++ 2day
+  + +1h
+
+- 잔여 : 6h 30m
 
   
 

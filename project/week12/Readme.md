@@ -8,6 +8,9 @@
 + 클래스에 대한 설명
   + 인스턴스에 대한 설명
   + ex) 자동차 공장
+
+![lKo6V](https://user-images.githubusercontent.com/33567964/78469650-39e28880-775e-11ea-8e15-6f5f7446aa6d.png)
+
 + 프로토 타입에 대한 설명
   + 링킹에 대한 설명 (__proto__)
 + `window `객체에 대한 설명
@@ -18,6 +21,9 @@
   + `call stack`
   + `event loop`
   + `queue`
+
+![1_9fbOuFXJHwhqa6ToCc_v2A](https://user-images.githubusercontent.com/33567964/78469613-de17ff80-775d-11ea-9df0-d7e0fac937c5.png)
+
 + `call by value`,`call by reference`설명
   + 깊은 복사 (값에 대한 메모리 설명)
   + 얇은 복사 (객체에 대한 메모리 설명)
@@ -29,6 +35,9 @@
   + 백엔드 영역의 라우터
   + 프론트엔드 영역의 라우터
   + 디비의 영역 
+
+![Untitled Diagram](https://user-images.githubusercontent.com/33567964/78469666-5979b100-775e-11ea-9a16-c2bcd2c36489.png)
+
 + 셋타임 아웃, 셋인터벌의 이벤트 루프에서의 설명
 
 [참고자료]([https://github.com/yjs03057/33-js-concepts#1-%ED%98%B8%EC%B6%9C-%EC%8A%A4%ED%83%9D](https://github.com/yjs03057/33-js-concepts#1-호출-스택))

@@ -42,11 +42,9 @@
 
 
 
-[참고자료]([https://github.com/yjs03057/33-js-concepts#1-%ED%98%B8%EC%B6%9C-%EC%8A%A4%ED%83%9D](https://github.com/yjs03057/33-js-concepts#1-호출-스택))
++ [참고자료]([https://github.com/yjs03057/33-js-concepts#1-%ED%98%B8%EC%B6%9C-%EC%8A%A4%ED%83%9D](https://github.com/yjs03057/33-js-concepts#1-호출-스택))
 
-
-
-
+[https://github.com/yjs03057/33-js-concepts#1-%ED%98%B8%EC%B6%9C-%EC%8A%A4%ED%83%9D](https://github.com/yjs03057/33-js-concepts#1-%ED%98%B8%EC%B6%9C-%EC%8A%A4%ED%83%9D](https://github.com/yjs03057/33-js-concepts#1-호출-스택](https://github.com/yjs03057/33-js-concepts#1-호출-스택)
 
 
 

@@ -2,17 +2,16 @@
 
 
 
-+ 프로토타입
-
 + 이벤트 루프 복습
 
-+ 자바스크립트 엔진의 기초 설명
+![KakaoTalk_20200411_111834470](https://user-images.githubusercontent.com/33567964/79035167-cbd31100-7bf6-11ea-92b2-ccbec6681037.gif)
 
++ 자바스크립트 엔진의 기초 설명
++ 가비지 컬렉터의 설명
+  + 순환 참조 설명
 + DOM 과 `Layout Tree` 설명
 
-+ `function prototype` 과 `class 인스턴스 ` 설명
-
-  + new 인스턴스의 사용법 설명
+![DOM](https://user-images.githubusercontent.com/33567964/79035183-f7ee9200-7bf6-11ea-9217-718644439d2c.png)
 
 + this의 4가지 사용법 설명
 
@@ -80,9 +79,11 @@ function add1(x,y){
 }
 ```
 
-
-
 + `closure ` 설명
+
++ `function prototype` 과 `class 인스턴스 ` 설명
+
+  - new 인스턴스의 사용법 설명
 
 + 프로토타입 참고자료
 

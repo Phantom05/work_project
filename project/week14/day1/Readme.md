@@ -28,6 +28,8 @@
 
   + `dataOutput` 함수 만들어보기, `format`팅한 오브젝트를 함수의 매개변수로 받아 비구조화(구조할당) 으로 값 할당하여 데이터 가공 해보기
 
+  + `array[index]`보단 `array push` 이용하여 `rowsList` 배열 만들어 데이터 가공하기
+
   + ```js
     function dataOutput(config) {
       const { dan, rows } = config;
@@ -48,6 +50,8 @@
     ```
 
   + `dataDrawing` 함수 만들기
+
+    +  객체 순회 `for in` 사용해보기
 
   
 

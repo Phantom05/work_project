@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row margin-top-150">
+      <div class="col-md-12">
+        <h1>Multiplication table output program.</h1>
+      </div>
+    </div>
+
+    <form action="https://www.naver.com"  id="inputForm">
+      <div class="row margin-top-50">
+        <div class="col-md-4">
+          <div class="card">
+            <input type="text" placeholder="Dan." class="form-control" id="inputDan">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <input type="text" placeholder="Rows." class="form-control" id="inputRows">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <input type="submit" value="Submit" class="btn btn-default" id="inputSubmitBtn">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="row margin-top-50">
+      <div class="col-md-12">
+        <div class="result" id="inputResult">
+
+          <div class="result__row">
+            1 x 1 = 1
+          </div>
+          <div class="result__row">
+            1 x 2 = 2
+          </div>
+          <div class="result__row">
+            1 x 3 = 3
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

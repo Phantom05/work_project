@@ -10,9 +10,7 @@ function count() {
   }
 }
 
-
 let upCount = count();
-
 
 console.log(
   upCount()

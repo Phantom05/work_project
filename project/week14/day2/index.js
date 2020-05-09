@@ -44,6 +44,7 @@ const viewInputList = [
     value: 1
   },
 ];
+
 const viewInputElemList = viewInputList.map(item => item.elem);
 
 init();
@@ -78,36 +79,19 @@ submitForm.addEventListener('submit', function (e) {
     form: submitForm,
   }
 
-  if(isNaN(submitObj.calcInput.value)){
+  if (isNaN(submitObj.calcInput.value)) {
     alert("Please enter only numbers.");
     return;
   }
-  if(+submitObj.calcInput.value === 0){
+  if (+submitObj.calcInput.value === 0) {
     alert("Please enter your data.");
     return;
   }
+
   dataSubmit(submitObj)
 
 });
 
-
-// [
-//   {
-//     name:'amount',
-//     value:15000
-//   },
-//   {
-//     name:"temThosand",
-//     value:1
-//   }
-// ]
-
-// {
-//   amount:15000,
-//   tenThousand:1,
-//   oneThousand:2,
-//   ...
-// }
 
 /**
  * NOTE: inputForm을 submit 할때 동작하는 함수입니다.
@@ -128,6 +112,7 @@ function dataSubmit(config) {
     list: inputList
   }
   const ouputList = dataOutput(ouputObj);
+
   // drawing
   const drawObj = {
     form: form,
@@ -136,6 +121,7 @@ function dataSubmit(config) {
   dataDrawing(drawObj);
   inputCalc.value = "";
 }
+
 
 /**
  * NOTE: target한 form의 name을 이용하여 데이터를 그려주는 부분입니다.
@@ -148,10 +134,12 @@ function dataDrawing(config) {
   })
 }
 
+
 /**
  * NOTE: 입력된 총양과, 리스트를 넣어 데이터를 가공합니다.
  * @param {object} config 
  */
+
 function dataOutput(config) {
   const { list, amount } = config;
   let updateValue = amount;
@@ -203,3 +191,32 @@ function init() {
   });
 
 }
+
+
+
+/**
+ * 눈높이 교육, 초보자 스타일
+ * querySelector,
+ * 변수명
+ */
+
+
+
+
+// [
+//   {
+//     name:'amount',
+//     value:15000
+//   },
+//   {
+//     name:"temThosand",
+//     value:1
+//   }
+// ]
+
+// {
+//   amount:15000,
+//   tenThousand:1,
+//   oneThousand:2,
+//   ...
+// }

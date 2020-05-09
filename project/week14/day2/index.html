@@ -30,13 +30,16 @@
     <form action="" id="submitForm">
       <div class="row margin-top-50">
         <div class="col-md-8">
-          <input type="text" class="form-control" placeholder="Please enter the amount." id="inputCalc" value="15150">
+          <input type="text" class="form-control" placeholder="Please enter the amount." id="inputCalc">
         </div>
         <div class="col-md-4">
           <button type="submit" class="btn btn-default" id="calcBtn">Calculation</button>
           <button class="btn btn-default" id="resetBtn">Reset</button>
         </div>
       </div>
+
+      <div title="hello"></div>
+
 
       <div class="row margin-top-50">
         <div class="col-md-12">
@@ -51,7 +54,6 @@
           </div>
 
           <div class="cal__row form-group row">
-
             <label for="" class="cal__label col-md-2 control-label">만원권 :</label>
             <div class="col-md-9">
               <input type="text" class="cal__input form-control" name="tenThousand">
@@ -62,7 +64,6 @@
           </div>
 
           <div class="cal__row form-group row">
-
             <label for="" class="cal__label col-md-2">천원권 :</label>
             <div class="col-md-9">
               <input type="text" class="cal__input form-control" name="oneThousand">
@@ -73,7 +74,6 @@
           </div>
 
           <div class="cal__row form-group row">
-
             <label for="" class="cal__label col-md-2">오백원 :</label>
             <div class="col-md-9">
               <input type="text" class="cal__input form-control" name="fiveHundred">
@@ -94,7 +94,6 @@
           </div>
 
           <div class="cal__row form-group row">
-
             <label for="" class="cal__label col-md-2">십원 :</label>
             <div class="col-md-9">
               <input type="text" class="cal__input form-control" name="ten">
@@ -105,7 +104,6 @@
           </div>
 
           <div class="cal__row form-group row">
-
             <label for="" class="cal__label col-md-2">일원 :</label>
             <div class="col-md-9">
               <input type="text" class="cal__input form-control" name="one">
@@ -114,12 +112,52 @@
               개
             </div>
           </div>
+
         </div>
       </div>
     </form>
 
   </div>
 
+
+  <div id="hello"></div>
+  <div class="world"></div>
+  <div class="world"></div>
+
+  <script>
+
+    // document.querySelector("#inputCalc").addEventListener('keyup',function(){
+    //   console.log(
+    //     document.querySelector("#inputCalc").className
+    //   );
+
+    //   console.dir(
+    //     document.querySelector("#inputCalc")
+    //   )
+    // })
+
+    // 2가지
+    // 프로토타입 링크 __proto__
+    // 프로토타입 오브젝트
+
+
+    // 생성자, constructor
+    // 인스턴스의 주체임니다. 인스턴스 숙주
+    // function Person(){
+    // }
+    // Person.prototype.hello = function(){
+    //   return 'hello'
+    // };
+
+    // var person = new Person(); // 인스턴스
+    // console.dir(
+    //   Person
+    // );
+    // console.log(
+    //   person
+    // );
+
+  </script>
 
   <script src="./index.js"></script>
 </body>

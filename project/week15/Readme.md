@@ -110,21 +110,54 @@ function dataDrawing(config) {
   
 
   + `main.js` 파일 만들어 init함수와 유효성 검사 함수 만들어서 사용하기
+
   + node.js 설치해보기
+
   + npm 이용하여 package.json 만들어보기
+
     + npm 사용법 설명
     + `.gitignore 만들어서 git 추적에서 제외해보기`
     + `package.json`과 npm 의 사용법, 활용법 설명
     + `--save 와 -g의 `사용법 설명
+
   + 백엔드 프레임워크 Express 서버 설치해보기
+
     + `get, post` router 만들어보기
     + router 통신 구조 설명
+
+    ```js
+    
+    router.post('/login', function (req, res, next) {
+      console.log('login post in');
+      console.log(req.body, '클라이언트로부터 받은 데이터');
+      console.log(req.body.username);
+      console.log(req.body.password);
+      // data 통신이 일어나고 isSuccessLogin변수로 데이터베이스 값을 가져왔는지 못가져왔는지 확인해서 넣어줍니다.
+      const isSuccessLogin = true;
+      let data;
+      if (isSuccessLogin) {
+        data = {
+          result: 1,
+          profile:{
+            name:"최율겸",
+            age:27,
+            hobby:"coding"
+          }
+        }
+      } else {
+        data = {
+          result: 0
+        }
+      }
+      res.json(data)
+      // res.render('index', { title: 'Login page' });
+    });
+    ```
+
+    
+
     + html에서 데이터 요청시 router에서 값 찍어보기
     + router에서 받은 값 json으로 반환해보기
-
-
-
-
 
 
 

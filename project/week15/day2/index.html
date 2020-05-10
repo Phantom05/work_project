@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div class="container wrap">
+    <div class="col-md-12">
+      <h1 class="margin-top-200 title">Login</h1>
+
+      <form class="margin-top-50" id="submitForm">
+        <div class="form-group">
+          <label for="inputEmail">이메일 주소</label>
+          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email.">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">암호</label>
+          <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password." >
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="inputRemember" name="remember"> Remember
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default btn__reset login__btn" id="inputSubmitBtn">Login</button>
+      </form>
+
+      <div class="login__link_box margin-top-30">
+        Forgot <span class="login__forget_btn" data-toggle="modal" data-target="#forgetModal">Email / Password ?</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="forgetModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Forgotten Account</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./main.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

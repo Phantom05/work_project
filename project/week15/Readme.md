@@ -1,7 +1,7 @@
 # week15
 
-+ querySelector의 사용법
-+ querySelectorAll의 사용법
++ `querySelector`의 사용법
++ `querySelectorAll`의 사용법
 +  `[[prototype]]`,`__proto__`와 프로토타입 오브젝트 사용법
 + 생성자와 인스턴스 구조 파악
 
@@ -57,7 +57,7 @@
   }
   ```
 
-+ 유동적 닷노테이션을 이용해 form input value 수정하기
++ 유동적 닷노테이션을 이용해 `form input value`  수정하기
 
 + `dataDrawing 함수로 만들기`
 
@@ -71,6 +71,59 @@ function dataDrawing(config) {
 
 ```
 
++ **로그인 페이지 만들어보기**
+
+  + 부트스트랩 모달 띄워보기
+  + `check remember input` 여부에 따라 `localStorage`에 값 저장하고 삭제해보기
+
+  ```js
+  inputRemember.addEventListener('change', function (e) {
+    const target = e.target;
+    const inputEmailValue = document.querySelector("#inputEmail").value;
+    if (target.checked) {
+      localStorage.remember = inputEmailValue;
+    } else {
+      localStorage.removeItem("remember");
+    }
+  })
+  ```
+
+  
+
+  +  페이지 로딩 시 init 함수로 `checkbox ` 체크 여부, `input email `데이터 값 넣어보기
+  + `axios` 이용하여 데이터 통신 해보기
+
+  ```js
+    axios(axiosConifg).then(function (res) {
+      console.log(res, 'res');
+      const { data } = res;
+      if (data.result === 1) {
+        const { profile } = data;
+        alert(`Welcome. ${profile.name} 님`);
+        console.log('마이페이지로 이동.');
+      }else{
+        alert("Login failure.");
+      }
+    });
+  ```
+
+  
+
+  + `main.js` 파일 만들어 init함수와 유효성 검사 함수 만들어서 사용하기
+  + node.js 설치해보기
+  + npm 이용하여 package.json 만들어보기
+    + npm 사용법 설명
+    + `.gitignore 만들어서 git 추적에서 제외해보기`
+    + `package.json`과 npm 의 사용법, 활용법 설명
+    + `--save 와 -g의 `사용법 설명
+  + 백엔드 프레임워크 Express 서버 설치해보기
+    + `get, post` router 만들어보기
+    + router 통신 구조 설명
+    + html에서 데이터 요청시 router에서 값 찍어보기
+    + router에서 받은 값 json으로 반환해보기
+
+
+
 
 
 
@@ -78,6 +131,9 @@ function dataDrawing(config) {
 + 참고자료
   + [유사배열](https://www.zerocho.com/category/JavaScript/post/5af6f9e707d77a001bb579d2)
   + [querySelector](https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector)
+  + [Express js](https://expressjs.com/ko/)
+  + [npm](https://www.npmjs.com/)
+  + [axios](https://github.com/axios/axios)
 
 
 
@@ -85,8 +141,7 @@ function dataDrawing(config) {
   + 구구단 출력기 혼자 만들어보기
   + 거스름돈 계산기 혼자 만들어보기
   + 나만의 프로그램 하나 만들어보기
-
-
+  + 로그인페이지도 하나 만들기보기
 
 
 

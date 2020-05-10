@@ -159,6 +159,8 @@ function dataDrawing(config) {
     + html에서 데이터 요청시 router에서 값 찍어보기
     + router에서 받은 값 json으로 반환해보기
 
+    ![express-2-3](https://user-images.githubusercontent.com/33567964/81491257-604c9400-92c7-11ea-95b7-819edd5a9e88.png)
+
 
 
 + 참고자료

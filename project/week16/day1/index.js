@@ -12,6 +12,36 @@ submitForm.addEventListener('submit', function (e) {
   e.preventDefault();
 });
 
+// NOTE: 딜리게이션 같이 구현해보기
+submitForm.addEventListener('click', function (e) {
+  const readClassList = [
+    "todoList__text",
+    "todoList__control_box",
+    "todoList__check_label",
+    "todoList__check_box"];
+
+  // read 관련 엘리먼트 클릭 시
+  console.log(e.target);
+  if (readClassList.indexOf(e.target.className) !== -1) {
+    const findRows = $(e.target).closest("div.todoList__item").get(0);
+    if (findRows) {
+      const dataUpdateFormat = {
+        id: +findRows.getAttribute("data-id"),
+        list: todoListArray,
+        type: "read"
+      }
+      dataUpdate(dataUpdateFormat);
+      const drawFormat = {
+        target: todoListBox,
+        list: todoListArray
+      }
+      dataDrawing(drawFormat);
+    }
+
+
+  }
+})
+
 
 inputText.addEventListener("keyup", function (e) {
   const { key } = e;
@@ -43,9 +73,20 @@ function updateOutput() {
 
 }
 
+function deleteListItem() {
+
+}
+
+function readListItem() {
+
+}
+
+
+
 function dataUpdate(config) {
   let { list, id, type } = config;
 
+  console.log('emfdj?');
   if (type === "delete") {
     const findIndex = list.findIndex(item => item.id !== +id);
     list.splice(findIndex, 1)
@@ -64,16 +105,6 @@ function insertListItem(config) {
   const { target, item } = config;
   target.append(item);
 }
-
-function deleteListItem() {
-
-}
-
-function readListItem() {
-
-}
-
-
 
 // NOTE: stage를 두기, 읽은 상태인지 아닌지
 // NOTE: delegation과 event 수업하기
@@ -107,7 +138,7 @@ function createListItem(config) {
 
   const itemElem = document.createElement('div');
   itemElem.className = "todoList__item";
-  itemElem.id = id;
+  itemElem.setAttribute('data-id', id)
 
   const textElem = document.createElement("div");
   textElem.className = "todoList__text";
@@ -123,8 +154,8 @@ function createListItem(config) {
   label.className = "todoList__check_label";
   label.setAttribute("for", id);
 
-
   const checkboxElem = document.createElement("input");
+  checkboxElem.className = "todoList__check_box"
   checkboxElem.type = "checkbox";
   checkboxElem.id = id;
   if (stage === 2) {
@@ -135,52 +166,53 @@ function createListItem(config) {
   deleteElem.className = "glyphicon glyphicon-trash todoList__delete_icon";
   deleteElem.setAttribute("data-delete-id", id);
 
-  itemElem.addEventListener('click', function (e) {
-    const istextElem = e.target.classList.contains("todoList__text");
-    const isControlElem = e.target.classList.contains("todoList__control_box");
+  // itemElem.addEventListener('click', function (e) {
+  //   const istextElem = e.target.classList.contains("todoList__text");
+  //   const isControlElem = e.target.classList.contains("todoList__control_box");
 
-    if (istextElem || isControlElem) {
-      const dataUpdateFormat = {
-        id: e.currentTarget.id,
-        list: todoListArray,
-        type: "read"
-      }
-      dataUpdate(dataUpdateFormat);
-      const drawFormat = {
-        target: todoListBox,
-        list: todoListArray
-      }
-      dataDrawing(drawFormat);
-    }
-  })
+  //   if (istextElem || isControlElem) {
+  //     const dataUpdateFormat = {
+  //       id: e.currentTarget.id,
+  //       list: todoListArray,
+  //       type: "read"
+  //     }
+  //     dataUpdate(dataUpdateFormat);
+  //     const drawFormat = {
+  //       target: todoListBox,
+  //       list: todoListArray
+  //     }
+  //     dataDrawing(drawFormat);
+  //   }
+  // })
 
-  checkboxElem.addEventListener('change', function (e) {
-    const dataUpdateFormat = {
-      id: e.target.id,
-      list: todoListArray,
-      type: "read"
-    }
-    dataUpdate(dataUpdateFormat);
-    const drawFormat = {
-      target: todoListBox,
-      list: todoListArray
-    }
-    dataDrawing(drawFormat);
-  });
+  // checkboxElem.addEventListener('change', function (e) {
+  //   console.log('change');
+  //   const dataUpdateFormat = {
+  //     id: e.target.id,
+  //     list: todoListArray,
+  //     type: "read"
+  //   }
+  //   dataUpdate(dataUpdateFormat);
+  //   const drawFormat = {
+  //     target: todoListBox,
+  //     list: todoListArray
+  //   }
+  //   dataDrawing(drawFormat);
+  // });
 
-  deleteElem.addEventListener('click', function (e) {
-    const dataUpdateFormat = {
-      id: e.target.getAttribute("data-delete-id"),
-      list: todoListArray,
-      type: "delete"
-    }
-    dataUpdate(dataUpdateFormat);
-    const drawFormat = {
-      target: todoListBox,
-      list: todoListArray
-    }
-    dataDrawing(drawFormat);
-  })
+  // deleteElem.addEventListener('click', function (e) {
+  //   const dataUpdateFormat = {
+  //     id: e.target.getAttribute("data-delete-id"),
+  //     list: todoListArray,
+  //     type: "delete"
+  //   }
+  //   dataUpdate(dataUpdateFormat);
+  //   const drawFormat = {
+  //     target: todoListBox,
+  //     list: todoListArray
+  //   }
+  //   dataDrawing(drawFormat);
+  // })
 
   itemElem.append(textElem, controlBoxElem);
   controlBoxElem.append(label, deleteElem);

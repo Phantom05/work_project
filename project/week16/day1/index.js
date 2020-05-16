@@ -20,27 +20,43 @@ submitForm.addEventListener('click', function (e) {
     "todoList__check_label",
     "todoList__check_box"];
 
-  // read 관련 엘리먼트 클릭 시
-  console.log(e.target);
-  if (readClassList.indexOf(e.target.className) !== -1) {
-    const findRows = $(e.target).closest("div.todoList__item").get(0);
-    if (findRows) {
-      const dataUpdateFormat = {
-        id: +findRows.getAttribute("data-id"),
-        list: todoListArray,
-        type: "read"
-      }
-      dataUpdate(dataUpdateFormat);
-      const drawFormat = {
-        target: todoListBox,
-        list: todoListArray
-      }
-      dataDrawing(drawFormat);
+  const deleteClassList = [
+    "todoList__delete_icon"
+  ]
+
+  const isReadClick = hasCompare(readClassList, Array.from(e.target.classList))
+  const isDeleteClick = hasCompare(deleteClassList, Array.from(e.target.classList));
+
+  const findRows = $(e.target).closest("div.todoList__item").get(0);
+  if (findRows) {
+    let type = "read";
+    if (isReadClick) {
+      type = "read"
     }
-
-
+    if (isDeleteClick) {
+      type = "delete"
+    }
+    const dataUpdateFormat = {
+      id: +findRows.getAttribute("data-id"),
+      list: todoListArray,
+      type: type
+    }
+    dataUpdate(dataUpdateFormat);
+    const drawFormat = {
+      target: todoListBox,
+      list: todoListArray
+    }
+    dataDrawing(drawFormat);
   }
-})
+
+
+
+});
+
+function hasCompare(list1, list2) {
+  return list1.some(item => list2.indexOf(item) !== -1)
+
+}
 
 
 inputText.addEventListener("keyup", function (e) {
@@ -125,7 +141,15 @@ function dataDrawing(config) {
     const newItem = createListItem(createFormat);
     return newItem;
   });
-  target.append(...newItemList);
+  if(list.length === 0){
+    const defaultElem = document.createElement("div");
+    defaultElem.textContent = "Please enter the item.";
+    defaultElem.className = "todoList__default_item";
+    target.append(defaultElem);
+  }else{
+    target.append(...newItemList);
+  }
+  
 }
 
 /**
@@ -164,7 +188,46 @@ function createListItem(config) {
 
   const deleteElem = document.createElement("span");
   deleteElem.className = "glyphicon glyphicon-trash todoList__delete_icon";
-  deleteElem.setAttribute("data-delete-id", id);
+  // deleteElem.setAttribute("data-delete-id", id);
+  itemElem.append(textElem, controlBoxElem);
+  controlBoxElem.append(label, deleteElem);
+  label.append(checkboxElem);
+  return itemElem;
+}
+
+/**
+ * NOTE: todoListArray를 Update하기 위한 데이터 item 포맷 함수
+ */
+function dataOutput(config) {
+  const { content } = config;
+  const dataId = new Date().valueOf();
+  const outputFormat = {
+    id: dataId,
+    stage: 1,
+    content
+  };
+  return outputFormat;
+}
+
+/**
+ * NOTE: 페이지가 로딩됬을때 처음 실행되는 함수
+ */
+function init() {
+  if (todoListArray.length === 0) {
+    const drawFormat = {
+      target: todoListBox,
+      list: todoListArray
+    }
+    dataDrawing(drawFormat);
+  }
+}
+
+init();
+
+
+
+
+
 
   // itemElem.addEventListener('click', function (e) {
   //   const istextElem = e.target.classList.contains("todoList__text");
@@ -213,39 +276,3 @@ function createListItem(config) {
   //   }
   //   dataDrawing(drawFormat);
   // })
-
-  itemElem.append(textElem, controlBoxElem);
-  controlBoxElem.append(label, deleteElem);
-  label.append(checkboxElem);
-  return itemElem;
-}
-
-/**
- * NOTE: todoListArray를 Update하기 위한 데이터 item 포맷 함수
- */
-function dataOutput(config) {
-  const { content } = config;
-  const dataId = new Date().valueOf();
-  const outputFormat = {
-    id: dataId,
-    stage: 1,
-    content
-  };
-  return outputFormat;
-}
-
-/**
- * NOTE: 페이지가 로딩됬을때 처음 실행되는 함수
- */
-function init() {
-  if (todoListArray.length === 0) {
-    const defaultElem = document.createElement("div");
-    defaultElem.textContent = "Please enter the item.";
-    defaultElem.className = "todoList__default_item";
-    todoListBox.append(defaultElem);
-  }
-}
-
-init();
-
-

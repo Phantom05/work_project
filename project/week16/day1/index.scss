@@ -35,13 +35,51 @@ body{
 
 .todoList__check_label{
   display: inline-block;
-  border: 1px solid red;
+  // border: 1px solid red;
   padding:5px;
   cursor: pointer;
+  position: relative;
+  &:after{
+    content: "\2713";
+    display: block;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #0b6d6d;
+    text-align: center;
+    color:#0b6d6d;
+  }
+  &.read{
+    &:after{
+      background: #0b6d6d;
+      content: "\2713";
+      text-align: center;
+      color: white;
+    }
+    &::before{
+      // content: "\2713";
+      // text-align: center;;
+      // display: block;
+      // position: absolute;
+      // left:50%;
+      // top:50%;
+      // transform:translate(-50%,-50%);
+      // width:20px;
+      // height: 20px;
+      // border-radius: 100%;
+      // // border: 1px solid #0b6d6d;
+      // color:white;
+    }
+  }
+
 }
 .todoList__delete_icon{
   display: inline-block;
-  border: 1px solid red;
+  // border: 1px solid red;
   padding:9px 5px;
 }
 
@@ -51,6 +89,7 @@ body{
 .todoList__text{
   width:80%;
   padding: 10px 0px;
+  transition: .3s;
   &.read{
     text-decoration: line-through;
     color:#ccc;
@@ -65,7 +104,9 @@ body{
   text-align: center;
   color: #a09d9d;
 }
-
+.todoList__check_box{
+  visibility: hidden;
+}
 
 
 @media screen and (max-width:$device_pc){

@@ -23,14 +23,26 @@
   <div class="container wrap">
     <div class="todoList margin-top-200">
 
+
       <form action="" id="submitForm">
         <div class="row">
           <div class="col-md-12">
             <h1>Todo List</h1>
+
+            <div class="margin-top-20">
+              <label for="checkRadio">
+                <input type="radio" id="checkRadio" name="removeRadio" checked> checked
+              </label>
+              <label for="allRadio">
+                <input type="radio" id="allRadio" name="removeRadio" > all
+              </label>
+              <button type="button" class="todoList__remove_list_btn" id="removeCheckBtn">remove</button>
+            </div>
           </div>
 
           <div class="col-md-12 margin-top-30">
             <input type="text" class="form-control" id="inputText" autocomplete="off">
+            <input type="submit" hidden>
           </div>
 
           <div class="col-md-12 margin-top-30">

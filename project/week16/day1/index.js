@@ -2,11 +2,12 @@
 const submitForm = document.querySelector("#submitForm");
 const inputText = document.querySelector("#inputText");
 const todoListBox = document.querySelector("#todoListBox");
+const removeCheckBtn = document.querySelector("#removeCheckBtn");
 
 // Craete Read Update Delete;
 
 
-const todoListArray = [];
+let todoListArray = [];
 
 submitForm.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -22,11 +23,15 @@ submitForm.addEventListener('click', function (e) {
 
   const deleteClassList = [
     "todoList__delete_icon"
-  ]
+  ];
+
+  const removeCheckList = [
+    "todoList__remove_list_btn"
+  ];
+
 
   const isReadClick = hasCompare(readClassList, Array.from(e.target.classList))
   const isDeleteClick = hasCompare(deleteClassList, Array.from(e.target.classList));
-
   const findRows = $(e.target).closest("div.todoList__item").get(0);
   if (findRows) {
     let type = "read";
@@ -50,13 +55,21 @@ submitForm.addEventListener('click', function (e) {
   }
 
 
-
 });
 
-function hasCompare(list1, list2) {
-  return list1.some(item => list2.indexOf(item) !== -1)
-
-}
+removeCheckBtn.addEventListener('click', function () {
+  const findRadioElem = Array.from(submitForm.removeRadio).find(item => item.checked);
+  let resetList = [];
+  if (findRadioElem.id === "checkRadio") {
+    resetList = todoListArray.filter(item => item.stage === 1);
+  }
+  todoListArray = resetList;
+  const drawFormat = {
+    target: todoListBox,
+    list: todoListArray
+  }
+  dataDrawing(drawFormat);
+})
 
 
 inputText.addEventListener("keyup", function (e) {
@@ -69,7 +82,7 @@ inputText.addEventListener("keyup", function (e) {
     };
     const newDataFormat = dataOutput(outputFormat);
 
-    todoListArray.push(newDataFormat);
+    todoListArray.unshift(newDataFormat);
     const drawFormat = {
       target: todoListBox,
       list: todoListArray
@@ -83,6 +96,9 @@ inputText.addEventListener("keyup", function (e) {
 });
 
 
+function hasCompare(list1, list2) {
+  return list1.some(item => list2.indexOf(item) !== -1)
+}
 
 
 function updateOutput() {
@@ -102,7 +118,6 @@ function readListItem() {
 function dataUpdate(config) {
   let { list, id, type } = config;
 
-  console.log('emfdj?');
   if (type === "delete") {
     const findIndex = list.findIndex(item => item.id !== +id);
     list.splice(findIndex, 1)
@@ -141,15 +156,15 @@ function dataDrawing(config) {
     const newItem = createListItem(createFormat);
     return newItem;
   });
-  if(list.length === 0){
+  if (list.length === 0) {
     const defaultElem = document.createElement("div");
     defaultElem.textContent = "Please enter the item.";
     defaultElem.className = "todoList__default_item";
     target.append(defaultElem);
-  }else{
+  } else {
     target.append(...newItemList);
   }
-  
+
 }
 
 /**
@@ -177,6 +192,9 @@ function createListItem(config) {
   const label = document.createElement("label");
   label.className = "todoList__check_label";
   label.setAttribute("for", id);
+  if (stage === 2) {
+    label.classList.add("read")
+  }
 
   const checkboxElem = document.createElement("input");
   checkboxElem.className = "todoList__check_box"

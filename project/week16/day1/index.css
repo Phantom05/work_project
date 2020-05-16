@@ -40,14 +40,36 @@ body {
 
 .todoList__check_label {
   display: inline-block;
-  border: 1px solid red;
   padding: 5px;
   cursor: pointer;
+  position: relative;
+}
+
+.todoList__check_label:after {
+  content: "\2713";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid #0b6d6d;
+  text-align: center;
+  color: #0b6d6d;
+}
+
+.todoList__check_label.read:after {
+  background: #0b6d6d;
+  content: "\2713";
+  text-align: center;
+  color: white;
 }
 
 .todoList__delete_icon {
   display: inline-block;
-  border: 1px solid red;
   padding: 9px 5px;
 }
 
@@ -58,6 +80,8 @@ body {
 .todoList__text {
   width: 80%;
   padding: 10px 0px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .todoList__text.read {
@@ -73,6 +97,10 @@ body {
 .todoList__default_item {
   text-align: center;
   color: #a09d9d;
+}
+
+.todoList__check_box {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 800px) {

@@ -27,6 +27,7 @@ body {
   text-align: center;
   color: white;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .number__item.last {

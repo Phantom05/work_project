@@ -86,7 +86,7 @@ body {
 
 .todoList__text.read {
   text-decoration: line-through;
-  color: #ccc;
+  opacity: .5;
 }
 
 .todoList__control_box {

@@ -5,15 +5,19 @@ const todoListBox = document.querySelector("#todoListBox");
 const removeCheckBtn = document.querySelector("#removeCheckBtn");
 
 // Craete Read Update Delete;
-
-
 let todoListArray = [];
 
+
+/**
+ * NOTE: 기존에 submit하는 form 이벤트를 막아줍니다.
+ */
 submitForm.addEventListener('submit', function (e) {
   e.preventDefault();
 });
 
-// NOTE: 딜리게이션 같이 구현해보기
+/**
+ * NOTE: 이벤트 딜리게이션일 이용해서, 클릭 엘리먼트에 따라, todoListArray 를 변경 후 화면에 그려줍니다.
+ */
 submitForm.addEventListener('click', function (e) {
   const readClassList = [
     "todoList__text",
@@ -25,14 +29,10 @@ submitForm.addEventListener('click', function (e) {
     "todoList__delete_icon"
   ];
 
-  const removeCheckList = [
-    "todoList__remove_list_btn"
-  ];
-
-
   const isReadClick = hasCompare(readClassList, Array.from(e.target.classList))
   const isDeleteClick = hasCompare(deleteClassList, Array.from(e.target.classList));
   const findRows = $(e.target).closest("div.todoList__item").get(0);
+
   if (findRows) {
     let type = "read";
     if (isReadClick) {
@@ -53,10 +53,11 @@ submitForm.addEventListener('click', function (e) {
     }
     dataDrawing(drawFormat);
   }
-
-
 });
 
+/**
+ * NOTE: remove 버튼 클릭함에 따라, radio 버튼을 체크 후, todoListArray를 변경 한 후 화면에 그려줍니다.
+ */
 removeCheckBtn.addEventListener('click', function () {
   const findRadioElem = Array.from(submitForm.removeRadio).find(item => item.checked);
   let resetList = [];
@@ -71,14 +72,22 @@ removeCheckBtn.addEventListener('click', function () {
   dataDrawing(drawFormat);
 })
 
-
+/**
+ * NOTE: todolist의 input 엘리먼의 key 이벤트를 잡아, Enter를 눌렀을시 todoListArray를 수정 후, 화면에 그려줍니다
+ */
 inputText.addEventListener("keyup", function (e) {
-  const { key } = e;
+  const { key, target } = e;
+  const value = target.value;
   // console.log(e, 'e');
-  if (key === "Enter") {
 
+  if (key === "Enter") {
+    if (value.trim().length === 0) {
+      alert("Spaces cannot be added.");
+      target.value = "";
+      return;
+    };
     const outputFormat = {
-      content: e.target.value,
+      content: value,
     };
     const newDataFormat = dataOutput(outputFormat);
 
@@ -88,33 +97,23 @@ inputText.addEventListener("keyup", function (e) {
       list: todoListArray
     }
     dataDrawing(drawFormat);
-    e.target.value = "";
-
-  } else {
-
+    target.value = "";
   }
 });
 
-
+/**
+ * NOTE: 리스트 2개를 비교하는데, 서로 포함하는 요소가 하나라도 있을때, true를 반환합니다.
+ * @param {*} list1 
+ * @param {*} list2 
+ */
 function hasCompare(list1, list2) {
   return list1.some(item => list2.indexOf(item) !== -1)
 }
 
-
-function updateOutput() {
-
-}
-
-function deleteListItem() {
-
-}
-
-function readListItem() {
-
-}
-
-
-
+/**
+ * NOTE: todoListArray를 수정합니다.
+ * @param {*} config 
+ */
 function dataUpdate(config) {
   let { list, id, type } = config;
 
@@ -132,14 +131,6 @@ function dataUpdate(config) {
   }
 }
 
-function insertListItem(config) {
-  const { target, item } = config;
-  target.append(item);
-}
-
-// NOTE: stage를 두기, 읽은 상태인지 아닌지
-// NOTE: delegation과 event 수업하기
-
 /**
  * NOTE: 받아온 리스트로 반복문을 돌며, target 엘리먼트에 아이템을 append 해주는 함수
  * @param {*} config 
@@ -156,6 +147,7 @@ function dataDrawing(config) {
     const newItem = createListItem(createFormat);
     return newItem;
   });
+
   if (list.length === 0) {
     const defaultElem = document.createElement("div");
     defaultElem.textContent = "Please enter the item.";
@@ -164,7 +156,6 @@ function dataDrawing(config) {
   } else {
     target.append(...newItemList);
   }
-
 }
 
 /**
@@ -173,18 +164,14 @@ function dataDrawing(config) {
  */
 function createListItem(config) {
   const { content, id, stage } = config;
-  console.log(stage, 'stage');
 
   const itemElem = document.createElement('div');
   itemElem.className = "todoList__item";
-  itemElem.setAttribute('data-id', id)
+  itemElem.setAttribute('data-id', id);
 
   const textElem = document.createElement("div");
   textElem.className = "todoList__text";
   textElem.textContent = content;
-  if (stage === 2) {
-    textElem.classList.add("read");
-  }
 
   const controlBoxElem = document.createElement("div");
   controlBoxElem.className = "todoList__control_box";
@@ -192,21 +179,21 @@ function createListItem(config) {
   const label = document.createElement("label");
   label.className = "todoList__check_label";
   label.setAttribute("for", id);
-  if (stage === 2) {
-    label.classList.add("read")
-  }
 
   const checkboxElem = document.createElement("input");
   checkboxElem.className = "todoList__check_box"
   checkboxElem.type = "checkbox";
   checkboxElem.id = id;
-  if (stage === 2) {
-    checkboxElem.checked = true
-  }
 
   const deleteElem = document.createElement("span");
   deleteElem.className = "glyphicon glyphicon-trash todoList__delete_icon";
-  // deleteElem.setAttribute("data-delete-id", id);
+
+  if (stage === 2) {
+    textElem.classList.add("read");
+    label.classList.add("read");
+    checkboxElem.checked = true
+  }
+
   itemElem.append(textElem, controlBoxElem);
   controlBoxElem.append(label, deleteElem);
   label.append(checkboxElem);
@@ -232,11 +219,13 @@ function dataOutput(config) {
  */
 function init() {
   if (todoListArray.length === 0) {
+
     const drawFormat = {
       target: todoListBox,
       list: todoListArray
-    }
-    dataDrawing(drawFormat);
+    };
+    dataDrawing(drawFormat)
+
   }
 }
 
@@ -245,6 +234,10 @@ init();
 
 
 
+
+
+// NOTE: stage를 두기, 읽은 상태인지 아닌지
+// NOTE: delegation과 event 수업하기
 
 
   // itemElem.addEventListener('click', function (e) {

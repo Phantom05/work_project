@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./lotto.css">
+  
+</head>
+<body>
+  
+  <div class="container wrap">
+
+    <div class="lotto__box margin-top-200">
+      <div class="row">
+        <div class="col-md-12 ">
+          <h1 class="title">Lotto</h1>
+        </div>
+      </div>
+
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <div class="lotto__btn_box">
+            <button class="btn btn-default">Start</button>
+            <button class="btn btn-default">Raffle</button>
+            <span class="lotto__random_box" id="randomNumber">00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <div class="lotto__number_box">
+
+            <span class="number__item">01</span>
+            <span class="number__item">01</span>
+            <span class="number__item">01</span>
+            <span class="number__item">01</span>
+            <span class="number__item">01</span>
+            <span class="number__item">01</span>
+            <span class="number__item last">01</span>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <div class="lotto__result_info">
+            이번주 추첨 번호는  01, 01, 01, 01, 01, 01, 보너스번호는 01 입니다.
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <script src="./function.js"></script>
+  <script src="./lotto.js"></script>
+</body>
+</html>

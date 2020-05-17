@@ -1,0 +1,60 @@
+$device_pc : 800px;
+
+
+
+body{
+  background: #f0f0f0;
+}
+.lotto__box{
+  width:500px;
+  margin: auto;
+  background: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+  border-radius: 5px;
+  padding:60px 20px;
+}
+
+.lotto__number_box,.lotto__btn_box,.title,.lotto__result_info{
+  text-align: center;
+}
+.number__item{
+  display: inline-block;
+  border-radius: 100%;
+  width:35px;
+  height: 35px;
+  background: #ececec;
+  line-height: 35px;
+  text-align: center;
+
+  &.last{
+    margin-left: 20px;
+  }
+}
+
+
+.lotto__random_box{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  width:40px;
+  border: 1px solid red;
+}
+
+@media screen and (max-width:$device_pc){
+  .wrap{
+    width:100%;
+  }
+}
+
+
+@mixin margin-top-setting($range) {
+  $i: 1;
+  @while $i <= $range {
+    .margin-top-#{$i * 10} {
+      margin-top: $i * 10px;
+    }
+    $i : $i+1;
+  }
+}
+
+@include margin-top-setting(20);

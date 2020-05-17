@@ -92,7 +92,7 @@ body{
   transition: .3s;
   &.read{
     text-decoration: line-through;
-    color:#ccc;
+    opacity: .5;
   }
 }
 .todoList__control_box{
@@ -114,8 +114,6 @@ body{
     width:100%;
   }
 }
-
-
 
 
 @mixin margin-top-setting($range) {

@@ -17,6 +17,7 @@ body {
 }
 
 .number__item {
+  position: relative;
   display: inline-block;
   border-radius: 100%;
   width: 35px;
@@ -24,10 +25,27 @@ body {
   background: #ececec;
   line-height: 35px;
   text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 .number__item.last {
-  margin-left: 20px;
+  margin-left: 35px;
+}
+
+.number__item.last:after {
+  left: -50%;
+  position: absolute;
+  content: "+";
+  clear: both;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .lotto__random_box {
@@ -35,7 +53,6 @@ body {
   font-weight: bold;
   font-size: 20px;
   width: 40px;
-  border: 1px solid red;
 }
 
 @media screen and (max-width: 800px) {

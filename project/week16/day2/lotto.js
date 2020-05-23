@@ -10,6 +10,8 @@ const colorRan = ["red", "orange", "blue", "deeppink", 'green', '#e653c6', "purp
 const numberList = [];
 for (let i = 1; i <= 45; i++) numberList.push(i);
 
+console.log(numberList);
+
 let ing = 1,
   lottoList = [],
   intervalFn,
@@ -20,7 +22,7 @@ startBtn.addEventListener('click', function () {
 
   if (ing === 1) {
     intervalFn = setInterval(function () {
-      ranNum = Math.floor(Math.random() * numberList.length);
+      ranNum = Math.ceil(Math.random() * numberList.length);
       if (ranNum < 10) ranNum = "0" + ranNum;
       ranElem.innerHTML = ranNum;
     }, 10);

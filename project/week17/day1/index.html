@@ -17,13 +17,19 @@
 
 <body>
 
-  <div class="container">
-    <h2>끝말잇기</h2>
-    <input type="text" id="inputWord">
-    <div id="result"></div>
-    <button>길이제한 on</button>
+  <div class="container wrap">
+    <h2 class="title margin-top-200">끝말잇기</h2>
+    <div class="btn__box">
+      <span class="info" id="info"></span>
+      <button type="button" class="btn btn-primary limit__btn" id="limitBtn">
+        Limit Length
+      </button>
+    </div>
+    <div class="margin-top-50">
+      <input class="form-control  input-lg " type="text" id="inputWord" autocomplete="off" placeholder="Word.">
+    </div>
+    <div class="margin-top-30 result__box" id="result"></div>
   </div>
-
 
   <script src="../function.js"></script>
   <script src="./index.js"></script>

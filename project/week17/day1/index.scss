@@ -1,0 +1,46 @@
+
+$device_pc:500px;
+.wrap{
+  width:$device_pc;
+  margin: auto;;
+}
+.title{
+  text-align: center;;
+}
+.result__box{
+  text-align: center;
+  font-size: 20px;;
+}
+.btn__box{
+  overflow: hidden;
+}
+.limit__btn{
+  float: right;
+}
+.info{
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 4px;
+  color: red;
+}
+
+
+
+@media screen and (max-width:$device_pc){
+  .wrap{
+    width:100%;
+  }
+}
+
+
+@mixin margin-top-setting($range) {
+  $i: 1;
+  @while $i <= $range {
+    .margin-top-#{$i * 10} {
+      margin-top: $i * 10px;
+    }
+    $i : $i+1;
+  }
+}
+
+@include margin-top-setting(20);

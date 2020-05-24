@@ -100,11 +100,56 @@ decideBtn.addEventListener('click', () => {
     
     ```
 
+- 계산기 코드 리뷰
+
+  - `=` 버튼을 두어 data중심으로 객체의 값을 변경 후 drawing 해주는 기능으로 개발 설명
   - 
 
 - 끝말잇기
 
+  - 코드분석
+    - 초기값 없을시 처리 기능 설명
+    - 깔끔한 데이터를 위한 `trim` 함수 적용
+  - 상항식 분석
+
+  ![unit20-1](https://user-images.githubusercontent.com/33567964/82745925-c86da080-9dc4-11ea-8463-2ecf542b858c.png)
+
+  - 콤마함수
+
+  ```js
+  function numberWithCommas(n) {
+    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+  ```
+
+  
+
 - 시장에 가면
+
+  - `dataDrawing` 함수 curring 하여 사용해보기
+
+  - 리팩토링 방식으로 개발
+
+  - 데이터 중심 개발
+
+  - 체이닝 기법을 활용한 데이터 파싱 
+
+    ```js
+    //example
+    const inputList = targetValue.split(",").map(item => item.trim());
+    
+    $(target).show().fadeOut(1000);
+    
+    ```
+
+  - 다양한 메서드 활용
+
+    - split
+    - map
+    - trim
+    - every
+    - slice
+    - push
 
 
 

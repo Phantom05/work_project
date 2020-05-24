@@ -6,7 +6,7 @@ const infoElem = document.querySelector("#info");
 const _cacheBtnText = limitBtn.textContent;
 
 const config = {
-  words: [0, 0],
+  words: ["나비", 0],
   limit: false
 }
 
@@ -18,7 +18,7 @@ inputWord.addEventListener('keyup', function (e) {
       target: resultElem,
       elem: inputTarget
     }
-    const curryDrawing = dataDrawing(drawFormat)
+    const curryDrawing = dataDrawing(drawFormat);
 
     const compareFormat = {
       words: config.words,
@@ -27,9 +27,12 @@ inputWord.addEventListener('keyup', function (e) {
     };
 
     if (compareValue(compareFormat)) {
+
       curryDrawing();
+      
     } else {
-      $(info).html("incorrect!").show().fadeOut(1000);
+      // $(info).html("incorrect!").show().fadeOut(1000);
+      alert("incorrect!");
       inputTarget.value ="";
     }
   }
@@ -39,8 +42,18 @@ inputWord.addEventListener('keyup', function (e) {
 limitBtn.addEventListener('click', function (e) {
   config.limit = !config.limit;
   limitBtn.innerHTML = `${_cacheBtnText} ${config.limit ? "on" : "off"}`;
-})
+});
 
-function init(){
 
-}
+
+
+// currying
+// function abc(bullet){
+//   const shot = bullet;
+//   return function (target){
+//     return `${shot} ${target}`;
+//   }
+// }
+
+// const reload = abc("장전");
+// reload("사과")

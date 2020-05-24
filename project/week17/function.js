@@ -115,7 +115,6 @@ console.log('function');
 
 function compareValue(config) {
   const { words, limit, value } = config;
-
   if (words[0] === 0) {
     words[0] = value;
     return true;
@@ -124,7 +123,6 @@ function compareValue(config) {
     const lastWord = words[0][words[0].length - 1];
     const firstWord = words[1][0];
     const isLimit = limit ? words[0].length === words[1].length : true;
-    
     if (lastWord === firstWord && isLimit) {
       words[0] = words[1];
       words[1] = 0;

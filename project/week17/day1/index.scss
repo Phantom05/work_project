@@ -24,14 +24,11 @@ $device_pc:500px;
   color: red;
 }
 
-
-
 @media screen and (max-width:$device_pc){
   .wrap{
     width:100%;
   }
 }
-
 
 @mixin margin-top-setting($range) {
   $i: 1;

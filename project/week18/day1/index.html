@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+
+  <form action="" id="signUpForm">
+    <div class="container wrap">
+      <div class="row margin-top-200">
+        <div class="col-md-12">
+          <h1 class="title">Sign up</h1>
+        </div>
+      </div>
+
+      <!-- NOTE: 이름 -->
+      <div class="row margin-top-50">
+        <div class="col-md-12">
+          <label for="signUpName">Name</label>
+          <input type="text" class="form-control" id="signUpName" placeholder="Name." autocomplete="off" name="name">
+        </div>
+      </div>
+
+      <!-- NOTE: 이메일 -->
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <label for="signUpEmail">Email</label>
+          <input type="text" class="form-control" placeholder="Email" autocomplete="off" id="signUpEmail" name="email">
+        </div>
+      </div>
+
+      <!-- NOTE: 비밀번호 -->
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <label for="signUpPassword">Password</label>
+          <div class="signUp__password_box">
+            <input type="password" class="form-control" placeholder="password." id="signUpPassword" name="password">
+          </div>
+          <div class="signUp__password_box margin-top-10">
+            <input type="password" class="form-control" placeholder="re-password" id="signUpRePassword"
+              name="rePassword">
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTE: 성별 / 생년월일 -->
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <label for="">Gender / BirthDay </label>
+          <div class="row">
+            <div class="col-md-4">
+              <input type="radio" name="gender" id="signUpGenderMale" checked hidden class="signUp__input gender">
+              <label for="signUpGenderMale" class="signUp__input genderLabel">Male</label>
+              <input type="radio" name="gender" id="signUpGenderFeMale" hidden class="signUp__input gender">
+              <label for="signUpGenderFeMale" class="signUp__input genderLabel">Female</label>
+            </div>
+
+            <div class="col-md-8">
+              <div class="form-inline">
+                <div class="form-group">
+                  <select name="birthYear" id="signUpBithYear" class="form-control">
+                    <option value="0" disabled selected hidden>Year</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="birthMonth" id="signUpBithMonth" class="form-control">
+                    <option value="0" disabled selected hidden>Month</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="birthDay" id="signUpBithDay" class="form-control">
+                    <option value="0" disabled selected hidden>Day</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTE: 개인정보 동의 -->
+      <div class="row margin-top-30">
+        <div class="col-md-12 text-center">
+          <label for="signUpTermsAgree">
+            <input type="checkbox" id="signUpTermsAgree" name="terms">
+            <span>Terms of use of personal information</span>
+          </label>
+          <span data-toggle="modal" data-target="#myModal" class="signUp__term link">view</span>
+        </div>
+      </div>
+
+      <!-- NOTE: 회원가입 버튼 -->
+      <div class="row margin-top-40">
+        <div class="col-md-12">
+          <button id="signUpSubmitBtn" type="button" class="btn btn-primary btn-lg btn-block">Sign
+            Up</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Terms of Service</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut, ab modi assumenda recusandae iure
+            inventore officiis doloremque sit fuga, soluta mollitia fugiat quo doloribus sapiente dolore, corporis quia
+            esse.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut, ab modi assumenda recusandae iure
+            inventore officiis doloremque sit fuga, soluta mollitia fugiat quo doloribus sapiente dolore, corporis quia
+            esse.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut, ab modi assumenda recusandae iure
+            inventore officiis doloremque sit fuga, soluta mollitia fugiat quo doloribus sapiente dolore, corporis quia
+            esse.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./backend.js"></script>
+  <script src="../function.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

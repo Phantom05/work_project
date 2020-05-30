@@ -110,7 +110,7 @@ decideBtn.addEventListener('click', () => {
   - 코드분석
     - 초기값 없을시 처리 기능 설명
     - 깔끔한 데이터를 위한 `trim` 함수 적용
-  - 상항식 분석
+  - 삼항식 분석
 
   ![unit20-1](https://user-images.githubusercontent.com/33567964/82745925-c86da080-9dc4-11ea-8463-2ecf542b858c.png)
 

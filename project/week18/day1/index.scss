@@ -1,0 +1,64 @@
+$device_pc:500px;
+
+.wrap {
+  width: $device_pc;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.signUp__input {
+  &.genderLabel {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px 7px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5px;
+    color: #666666;
+
+    &:hover {
+      background: #ececec;
+    }
+  }
+
+  &.gender {
+    &:checked+.genderLabel {
+      border: 1px solid #ff5e00;
+      color: #ff5e00;
+    }
+  }
+}
+
+.signUp__term {
+  &.tx {}
+
+  &.link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width:$device_pc) {
+  .wrap {
+    width: 100%;
+  }
+}
+
+@mixin margin-top-setting($range) {
+  $i: 1;
+
+  @while $i <=$range {
+    .margin-top-#{$i * 10} {
+      margin-top: $i * 10px;
+    }
+
+    $i : $i+1;
+  }
+}
+
+@include margin-top-setting(20);

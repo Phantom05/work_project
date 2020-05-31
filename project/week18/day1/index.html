@@ -30,6 +30,7 @@
         <div class="col-md-12">
           <label for="signUpName">Name</label>
           <input type="text" class="form-control" id="signUpName" placeholder="Name." autocomplete="off" name="name">
+          <div class="signUp__info failure" data-name="name">Please check your name.</div>
         </div>
       </div>
 
@@ -38,6 +39,7 @@
         <div class="col-md-12">
           <label for="signUpEmail">Email</label>
           <input type="text" class="form-control" placeholder="Email" autocomplete="off" id="signUpEmail" name="email">
+          <div class="signUp__info failure" data-name="email">Please check your email.</div>
         </div>
       </div>
 
@@ -47,10 +49,12 @@
           <label for="signUpPassword">Password</label>
           <div class="signUp__password_box">
             <input type="password" class="form-control" placeholder="password." id="signUpPassword" name="password">
+            <div class="signUp__info failure" data-name="password">Please check your password.</div>
           </div>
           <div class="signUp__password_box margin-top-10">
             <input type="password" class="form-control" placeholder="re-password" id="signUpRePassword"
               name="rePassword">
+            <div class="signUp__info failure" data-name="rePassword">Please check your Re-password.</div>
           </div>
         </div>
       </div>
@@ -61,30 +65,32 @@
           <label for="">Gender / BirthDay </label>
           <div class="row">
             <div class="col-md-4">
-              <input type="radio" name="gender" id="signUpGenderMale" checked hidden class="signUp__input gender">
+              <input type="radio" name="gender" id="signUpGenderMale" checked hidden class="signUp__input gender"
+                value="1">
               <label for="signUpGenderMale" class="signUp__input genderLabel">Male</label>
-              <input type="radio" name="gender" id="signUpGenderFeMale" hidden class="signUp__input gender">
+              <input type="radio" name="gender" id="signUpGenderFeMale" hidden class="signUp__input gender" value="2">
               <label for="signUpGenderFeMale" class="signUp__input genderLabel">Female</label>
             </div>
 
             <div class="col-md-8">
               <div class="form-inline">
                 <div class="form-group">
-                  <select name="birthYear" id="signUpBithYear" class="form-control">
+                  <select name="birthYear" id="signUpBirthYear" class="form-control">
                     <option value="0" disabled selected hidden>Year</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <select name="birthMonth" id="signUpBithMonth" class="form-control">
+                  <select name="birthMonth" id="signUpBirthMonth" class="form-control">
                     <option value="0" disabled selected hidden>Month</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <select name="birthDay" id="signUpBithDay" class="form-control">
+                  <select name="birthDay" id="signUpBirthDay" class="form-control">
                     <option value="0" disabled selected hidden>Day</option>
                   </select>
                 </div>
               </div>
+              <div class="signUp__info failure" data-name="birth">Please check your bithDay.</div>
             </div>
           </div>
         </div>
@@ -98,6 +104,7 @@
             <span>Terms of use of personal information</span>
           </label>
           <span data-toggle="modal" data-target="#myModal" class="signUp__term link">view</span>
+          <div class="signUp__info failure" data-name="terms">Please check your term.</div>
         </div>
       </div>
 

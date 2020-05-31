@@ -32,6 +32,23 @@ $device_pc:500px;
   }
 }
 
+.signUp__info {
+  position: relative;
+  transition: .3s;
+  opacity: 0;
+  left: -30px;
+
+  &.failure {
+    font-size: 12px;
+    color: red;
+  }
+
+  &.active {
+    opacity: 1;
+    left: 0;
+  }
+}
+
 .signUp__term {
   &.tx {}
 

@@ -26,6 +26,24 @@
   color: #ff5e00;
 }
 
+.signUp__info {
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  left: -30px;
+}
+
+.signUp__info.failure {
+  font-size: 12px;
+  color: red;
+}
+
+.signUp__info.active {
+  opacity: 1;
+  left: 0;
+}
+
 .signUp__term.link {
   color: blue;
   text-decoration: underline;

@@ -1,0 +1,32 @@
+{
+  "name": "work_project",
+  "version": "1.0.0",
+  "description": "중고급 Front-end Developer로의 성장을 위해 핵심적인 Publishing 능력과, Javascript, 웹 생태계를 보다 깊게 파악하는것이 중요 핵심. 또, 학원생들과 보다 차별 적인 학습과, 코드에 대한 고찰과 반복학습으로 Code Review를 통한 실력 향상에 입각한 개인 과외입니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phantom05/work_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phantom05/work_project/issues"
+  },
+  "homepage": "https://github.com/Phantom05/work_project#readme",
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.8"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.1.0",
+    "run-sequence": "^2.2.1"
+  }
+}

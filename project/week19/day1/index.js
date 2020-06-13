@@ -54,7 +54,7 @@ const World1 = {
   bye: "world",
   // 메서드
   programming() {
-    console.log(this, "method"); // World
+    console.log(this, "method"); // World1
   },
 };
 World1.programming();
@@ -77,18 +77,9 @@ const boundX = unboundGetX.bind(module);
 
 console.log(module.getX.apply(module, ["test", "world", "eghelf"]));
 
-// {
-//   put(){
-//   },
-//   getDate(){
-//   }
-// }
-
 // function RemovableStorag(){
 //   this.dataStore={}
 // }
-
-// 47개
 
 // npm,
 

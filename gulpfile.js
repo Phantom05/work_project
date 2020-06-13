@@ -12,6 +12,9 @@ const _path = {
     style: "./project/build/",
   },
 };
+
+// apply()
+
 const setting = {
   styles: {
     scss_option: {

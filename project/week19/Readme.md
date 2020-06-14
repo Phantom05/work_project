@@ -256,6 +256,20 @@
 
     + `document.querySelector, document.querySelectorAll`  추상화
 
+      + ```js
+        function el(name) {
+          const element = document.querySelector(`#${name}`);
+          return element;
+        }
+        function elAll(className) {
+          const getElements = document.querySelectorAll(className);
+          const elemenetList = Array.from(getElements);
+          return elemenetList;
+        }
+        ```
+
+      + 
+
     + `Content List `데이터를 통한 리스트 업데이트
 
     + 페이지 `init `시 `storage`값으로 데이터 초기화
@@ -263,7 +277,7 @@
 
 
 + 숙제
-  + `JSON.stringfy `학습해보기, `JSON.parse` 학습해보기
+  + `JSON.stringfy `학습해보기, `JSON.parse` 학습해보기 [링크](https://www.w3schools.com/js/js_json_stringify.asp)
   + Delete 부분 코드 추가해서 해서 올려놨어요!! 코드 이해하면서 Read쪽 한번 해보시면 좋을거같은데여!!
   + 어려운 개념 복습해보기!
   + 나만의 프로그램 하나 만들어보기 (시간이 되면 해보기)

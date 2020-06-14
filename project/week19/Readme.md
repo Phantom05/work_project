@@ -230,7 +230,11 @@
 
     + 이벤트 딜리게이션 학습
 
-      + 이벤트 전파 막는방법 학습 `stopProgation`
+      + 이벤트 전파 막는방법 학습 `stopProgation` 을 사용하면 버블링을 막게 됩니다.
+      + 버블링, 캡처링 개념
+      + ![1_tqVhiv1UU6loC8Mily3kpw](https://user-images.githubusercontent.com/33567964/84586046-bd9cad80-ae50-11ea-97eb-538c75a85cee.png)
+      + ![efAzj](https://user-images.githubusercontent.com/33567964/84586056-d2794100-ae50-11ea-8cf8-9f9aabd045a1.jpg)
+      + 
 
     + logout 후`window.location.reload()`  로 새로고침
 

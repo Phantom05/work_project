@@ -224,17 +224,43 @@
 
     + RemovaleStorage() 에서 중요한점은 Storage call을 사용하여 생성자가 new RemovableStorage() 될떄 Storage를 실행하여 RemovableStorage로 this를 바인딩하여 풀어줍니다. 여기서 call의 개념이 나오는데요, `bind, call, apply`는 한번씩 보고 넘어가면 좋은 개념입니다.
 
+    + 
+
   + **보고서 프로그램 개발**
 
-  + 
+    + 이벤트 딜리게이션 학습
 
+      + 이벤트 전파 막는방법 학습 `stopProgation`
 
+    + logout 후`window.location.reload()`  로 새로고침
 
+      + `intialize` 함수로 인한 화면 업데이트
 
+    + Template Literal (` `` ` )을  이용한 tag 파싱
+
+    + `localStorage ` 이용
+
+      + `lock `페이지 구현
+
+      + `propmt`를 이용한 `storage `동기화,
+
+      + `login, logout`에 따른 화면 변화
+
+      + `form insert`시 데이터 중심 업데이트
+
+        
+
+    + `document.querySelector, document.querySelectorAll`  추상화
+
+    + `Content List `데이터를 통한 리스트 업데이트
+
+    + 페이지 `init `시 `storage`값으로 데이터 초기화
 
 
 
 + 숙제
+  + `JSON.stringfy `학습해보기, `JSON.parse` 학습해보기
+  + Delete 부분 코드 추가해서 해서 올려놨어요!! 코드 이해하면서 Read쪽 한번 해보시면 좋을거같은데여!!
   + 어려운 개념 복습해보기!
   + 나만의 프로그램 하나 만들어보기 (시간이 되면 해보기)
 

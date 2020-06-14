@@ -448,6 +448,8 @@
 - [15주차](https://github.com/Phantom05/work_project/tree/master/project/week15)
 - [16주차](https://github.com/Phantom05/work_project/tree/master/project/week16)
 - [17주차](https://github.com/Phantom05/work_project/tree/master/project/week17)
+- [18주차](https://github.com/Phantom05/work_project/tree/master/project/week18)
+- [19주차](https://github.com/Phantom05/work_project/tree/master/project/week19)
 
 
 

@@ -52,7 +52,11 @@ function build_styles() {
       .pipe(sass(setting.styles.scss_option).on("error", sass.logError))
       // .pipe(sourcemaps.write())
       .pipe(autoprefixer("last 2 versions"))
-      .pipe(gulp.dest(_path.dist.style))
+      .pipe(
+        gulp.dest(function (file) {
+          return file.base;
+        })
+      )
   );
 }
 

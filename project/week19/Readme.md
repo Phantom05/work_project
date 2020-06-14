@@ -224,6 +224,10 @@
 
     + RemovaleStorage() 에서 중요한점은 Storage call을 사용하여 생성자가 new RemovableStorage() 될떄 Storage를 실행하여 RemovableStorage로 this를 바인딩하여 풀어줍니다. 여기서 call의 개념이 나오는데요, `bind, call, apply`는 한번씩 보고 넘어가면 좋은 개념입니다.
 
+  + **보고서 프로그램 개발**
+
+  + 
+
 
 
 
@@ -231,12 +235,16 @@
 
 
 + 숙제
-
   + 어려운 개념 복습해보기!
   + 나만의 프로그램 하나 만들어보기 (시간이 되면 해보기)
 
-  ------
 
-------
 
-- 보충수업 잔여 10h 
+
+
+
+
+<hr>
+
+보충수업 잔여 9h 
+

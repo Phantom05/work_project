@@ -51,3 +51,7 @@ const config = {
 };
 
 module.exports = config;
+
+/**
+ * npm install --save-dev webpack webpack-cli html-webpack-plugin babel-loader @babel/core @babel/preset-env copy-webpack-plugin webpack-bundle-analyzer mini-css-extract-plugin clean-webpack-plugin
+ */

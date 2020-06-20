@@ -1,0 +1,60 @@
+$device_pc:800px;
+
+
+.wrap {
+  width: $device_pc;
+  margin: auto;
+}
+
+.box {
+  border: 1px solid #eee;
+  float: left;
+  width: calc(100% / 5);
+  min-height: 10px;
+}
+
+
+.randomBox__box {
+  min-height: 200px;
+  border: 1px solid gray;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.randomBox__title {
+  text-align: center;
+}
+
+.randomBox__imgbox {
+  border: 1px solid red;
+}
+
+.randomBox__img {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin margin-top-setting($range) {
+  $i: 1;
+
+  @while $i <=$range {
+    .margin-top-#{$i * 10} {
+      margin-top: $i * 10px;
+    }
+
+    $i : $i+1;
+  }
+}
+
+@media screen and (max-width:$device_pc) {
+  .wrap {
+    width: 100%;
+  }
+}
+
+
+@include margin-top-setting(20);

@@ -256,6 +256,8 @@
 
     + `document.querySelector, document.querySelectorAll`  추상화
 
+    + [ObjectObject]
+    
       ```js
       function el(name) {
         const element = document.querySelector(`#${name}`);
@@ -265,11 +267,11 @@
         const getElements = document.querySelectorAll(className);
         const elemenetList = Array.from(getElements);
         return elemenetList;
-      }
+  }
       ```
 
     + `Content List `데이터를 통한 리스트 업데이트
-
+    
     + 페이지 `init `시 `storage`값으로 데이터 초기화
 
 

@@ -14,6 +14,7 @@ function elAll(className) {
  * @param {*} elm
  * @param {*} attributes
  */
+
 function findParent(elm, attributes) {
   const resArr = [],
     tmp = elm;
@@ -79,23 +80,30 @@ function findParent(elm, attributes) {
 //   author:"",
 //   content:""
 // }
-
  * @param {*} config
  */
+
 function makeListItem(config) {
-  const { id = "", title = "", author = "", content = "" } = config;
+  const {
+    id = "",
+    title = "",
+    author = "",
+    content = "",
+    isRead = false,
+  } = config;
   const indexId = id;
+  const hasReadClassName = isRead ? "active" : "";
   return `
   <div class="report__list box">
     <div class="report__list item" type="button" data-toggle="collapse" data-target="#${indexId}"
       aria-expanded="false" aria-controls="${indexId}" data-name="listIndex">
       <div class="row">
         <div class="col-md-9">
-          <p class="report__title">${title} </p>
+          <p class="report__title ${hasReadClassName}">${title} </p>
         </div>
         <div class="col-md-3">
           <span class="report__author">${author}</span> 
-          <button type="button" class="report__btn read" data-name="read">
+          <button type="button" class="report__btn read ${hasReadClassName}" data-name="read">
             <span class="glyphicon glyphicon-ok" aria-hidden="true" data-name="read"></span>
           </button> 
           <button type="button" class="report__btn delete" data-name="delete">
@@ -129,12 +137,20 @@ const storage = {
 };
 
 function outputData(config) {
-  const { id = 0, title = "", author = "", content = "" } = config;
+  const {
+    id = 0,
+    title = "",
+    author = "",
+    content = "",
+    isRead = false,
+  } = config;
+
   return {
-    id: id,
-    title: title,
-    author: author,
-    content: content,
+    id,
+    title,
+    author,
+    content,
+    isRead,
   };
 }
 
@@ -142,7 +158,6 @@ function dataDrawing(config) {
   const { type = "", list = [], target = {} } = config;
   if (type === "listing") {
     target.innerHTML = "";
-    console.log(list.length, "list.length");
     if (list.length === 0) {
       target.innerHTML = "No data.";
     } else {
@@ -159,4 +174,28 @@ function removeArrayItem(config) {
   const newList = list.slice();
   newList.splice(findIndex, 1);
   return newList;
+}
+
+function setDataControl(config) {
+  const { target, list } = config;
+  // target은 데이터중심의 config 객체
+  // list는 storage와, config 객체의 list를 대체할 배열 list
+  storage.remove("list");
+  storage.set("list", JSON.stringify(list));
+  target.list = list;
+}
+
+function setDataBundle(baseElement) {
+  return function (config) {
+    const { target, list } = config;
+    const setDataFormat = { target, list };
+    setDataControl(setDataFormat);
+    // NOTE: 스토리지값도 삭제해야함
+    const drawingFormat = {
+      type: "listing",
+      list: list,
+      target: baseElement,
+    };
+    dataDrawing(drawingFormat);
+  };
 }

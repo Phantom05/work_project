@@ -16,45 +16,50 @@ const config = {
 
 initialze();
 
+const setDataMerge = setDataBundle(listingBoxElem);
+
+/**
+ * NOTE: listing box event delegation
+ */
 listingBoxElem.addEventListener("click", function (e) {
   const target = e.target;
   const getTargetAttrDataName = target.getAttribute("data-name");
 
   // data-name속성이 있는엘리먼트만 들어갑니다.
-  if (!!getTargetAttrDataName) {
-    e.stopPropagation();
+  // read나 delete 속성을 갖고있는 엘리먼트만 if문으로 들어갑니다.
+  if (Boolean(getTargetAttrDataName)) {
+    e.stopPropagation(); // 더 이상의 이벤트 전파를 막아줍니다.
     const findParentItem = findParent(target, { "data-name": "listIndex" });
-    const findParentId = findParentItem.getAttribute("aria-controls");
+    const findParentId = findParentItem.getAttribute("aria-controls"); // 밀리세컨드 아이디
+    const findListItem = config.list.find(
+      (item) => item.id === Number(findParentId)
+    );
 
-    // delete버튼인지
+    // NOTE: delete 버튼 클릭 시
     if (getTargetAttrDataName === "delete") {
-      const findListItem = config.list.find(
-        (item) => item.id === Number(findParentId)
-      );
-      if (!!findListItem) {
-        const confirmDelete = confirm("Are you sure you want to delete?");
-        if (confirmDelete) {
-          const removeFormat = {
-            value: findParentId,
-            list: config.list,
-          };
-          // NOTE: 이부분 추가해주기
-          // NOTE: Data Update 함수 만들기
-          const newList = removeArrayItem(removeFormat);
-          storage.remove("list");
-          storage.set("list", JSON.stringify(newList));
-          // NOTE: 스토리지값도 삭제해야함
-          const drawingFormat = {
-            type: "listing",
-            list: newList,
-            target: listingBoxElem,
-          };
-
-          dataDrawing(drawingFormat);
-        }
+      // 찾은 아이템이 있으면,
+      const confirmDelete = confirm("Are you sure you want to delete?");
+      if (confirmDelete) {
+        const removeFormat = {
+          value: findParentId,
+          list: config.list,
+        };
+        const newList = removeArrayItem(removeFormat);
+        const bundleFormat = {
+          target: config,
+          list: newList,
+        };
+        setDataMerge(bundleFormat);
       }
-      // read버튼인지
+      // NOTE: read 버튼 클릭 시
     } else if (getTargetAttrDataName === "read") {
+      // findListItem if로 나중에 전체 감싸주기/
+      findListItem.isRead = !findListItem.isRead;
+      const bundleFormat = {
+        target: config,
+        list: config.list,
+      };
+      setDataMerge(bundleFormat);
     }
   }
 });
@@ -75,15 +80,13 @@ inputInsertBtn.addEventListener("click", function () {
       content: contentValue,
     };
     const listItemData = outputData(dataFormat);
-    config.list.push(listItemData);
-    storage.set("list", JSON.stringify(config.list));
-
-    const drawingFormat = {
-      type: "listing",
-      list: config.list,
-      target: listingBoxElem,
+    const newList = config.list.concat(listItemData);
+    const bundleFormat = {
+      target: config,
+      list: newList,
     };
-    dataDrawing(drawingFormat);
+    setDataMerge(bundleFormat);
+
     inputTitleElem.value = "";
     inputContentElem.value = "";
   } else {

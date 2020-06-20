@@ -36,10 +36,24 @@ $device_pc:800px;
   display: none;
 }
 
+.report__title {
+  &.active {
+    color: #ccc
+  }
+}
+
 .report__list {
   &.item {
     border-bottom: 1px solid #ccc;
     cursor: pointer;
+  }
+}
+
+.report__btn {
+  &.active {
+    color: green;
+    background: white;
+    border: 1px solid green;
   }
 }
 

@@ -8,7 +8,7 @@
 
   + `prototype`과 `constructor `에 대한 설명
   + `bind,call,apply` 의 흐름에 대한 설명
-  + **버블링**과 **캡쳐링 **설명
+  + **버블링**과 **캡쳐링**설명
 
 + **JSON**의 중요성 설명
 
@@ -96,20 +96,135 @@
     dataDrawing(drawingFormat);
     ```
 
-    
-
-
+  
 
 ### Random Box Program
 
 + 기본 퍼블리싱
+
 + `data.json` 준비
 
++ 비동기,  싱글스레드, 멀티스레드 설명
+
++ `async, await`을 이용한 비동기 사용법
+
++  **axjos**사용법
+
+  ```js
+  const api = {
+    movieData: "../data.json",
+    movieDetail: "/movie/detail",
+  };
+  
+  async function main() {
+    const { data } = await axios.get(api.movieData);
+    console.log(data,'data')
+  }
+  
+  ```
+
+  - get 요청을 진행하고 api주소를 넣는 공간에 파일 주소를 넣으면 파일을 읽어옵니다.
+
++ filter를 통한 data 필터링
+
+```js
+  const filterData = data.filter((item) => {
+    const gernList = item.gern.split(/\s*,\s/);
+    if (gernList.indexOf("19금") === -1) {
+      return item;
+    }
+  });
+```
+
++ 비동기 처리가 들어간 부분에 대해 이벤트를 `false `시켜주는 코드 추가
+
+```js
+const config = {
+  isLoading: true,
+  count: 20,
+  list: [],
+};
+
+randomBtn.addEventListener("click", function () {
+  if (config.isLoading === true) return; 
+  // data가 없을떄 함수가 진행 되면 안되므로 isLoading 이 없을때 return 처리 진행
+
+  const bundleFormat = {
+    count: config.count,
+    list: config.list,
+  };
+  setDataMerge(bundleFormat);
+});
+
+```
+
+
+
++ `new Set()` 을 이용한 중복제거
+
+```js
+function outPutData(config) {
+  let { count = 0, list = [] } = config;
+  if (list.length < count) {
+    count = list.length;
+  }
+  const overlapList = new Set();
+  const randomNewList = [];
+  while (true) { // 무한루프 이므로 꼭 탈출전략이 필요합니다.
+    if (overlapList.size >= count) {
+      break;
+    }
+    const randomNum = Math.floor(Math.random() * list.length);
+    overlapList.add(randomNum);
+  }
+  for (let value of overlapList) {
+      //Set을 순회할땐 for of 를 이용하는것이 편합니다.
+    const listItem = list[value];
+    randomNewList.push(listItem);
+  }
+  return randomNewList;
+}
+```
+
+
+
++ 공통되는 부분을 리팩토링 하여 함수로 빼놓는게 좋습니다.
+
+  ```js
+  function setDataBundle(baseElement) {
+    return function (config) {
+      const { count, list } = config;
+      const outputFormat = { count, list };
+      const randomNewList = outPutData(outputFormat);
+      const drawingFormat = {
+        target: baseElement,
+        list: randomNewList,
+      };
+      dataDrawing(drawingFormat);
+    };
+  }
+  
+  //curring 처리
+  const setDataMerge = setDataBundle(randomBox);
+  const bundleFormat = {
+      count: config.count,
+      list: config.list,
+    };
+    setDataMerge(bundleFormat);
+  ```
+
+  
 
 
 
 
 
+#### 숙제
+
++ [jquery w3c school](https://www.w3schools.com/jquery/)로 훑어보기  
++ jquery로 슬라이드 만들어보기
++ vanilla javascript로 슬라이드 만들어보기
++ `new Set()`말고, 중복 제거 처리 기능 만들어보기
 
 <hr>
 

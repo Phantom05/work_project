@@ -1,5 +1,11 @@
 $device_pc:800px;
 
+* {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .wrap {
   width: $device_pc;
@@ -27,15 +33,16 @@ $device_pc:800px;
 
 .randomBox__title {
   text-align: center;
+  height: 40px;
 }
 
 .randomBox__imgbox {
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .randomBox__img {
   width: 100%;
-  height: 100%;
+  height: 200px;
 }
 
 @mixin margin-top-setting($range) {

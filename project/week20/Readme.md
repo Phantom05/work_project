@@ -68,35 +68,35 @@
   
   ```
 
-  + 매개변수 `baseElement `의 `static`한 사용으로 간단한 `curring `실습 및 이해
++ 매개변수 `baseElement `의 `static`한 사용으로 간단한 `curring `실습 및 이해
 
-  + 공통되는 부분을 리팩토링 하여 함수로 빼놓는게 좋습니다.
++ 공통되는 부분을 리팩토링 하여 함수로 빼놓는게 좋습니다.
 
-    ```js
-    const { target, list } = config;
-    const setDataFormat = { 
-        target:listingBoxElem, 
-        list:newList
-    };
-    setDataControl(setDataFormat);
-    const drawingFormat = {
-          type: "listing",
-          list: newList,
-          target: listingBoxElem,
-        };
-    dataDrawing(drawingFormat);
-    //위의 코드가 여러 이벤트에서 중복되어 아래의 1개의 함수로 변경
-    
-    
-    const drawingFormat = {
-          type: "listing",
-          list: config.list,
-          target: listingBoxElem,
-        };
-    dataDrawing(drawingFormat);
-    ```
-
+  ```js
+  const { target, list } = config;
+  const setDataFormat = { 
+      target:listingBoxElem, 
+      list:newList
+  };
+  setDataControl(setDataFormat);
+  const drawingFormat = {
+        type: "listing",
+        list: newList,
+        target: listingBoxElem,
+      };
+  dataDrawing(drawingFormat);
+  //위의 코드가 여러 이벤트에서 중복되어 아래의 1개의 함수로 변경
   
+  
+  const drawingFormat = {
+        type: "listing",
+        list: config.list,
+        target: listingBoxElem,
+      };
+  dataDrawing(drawingFormat);
+  ```
+
+
 
 ### Random Box Program
 

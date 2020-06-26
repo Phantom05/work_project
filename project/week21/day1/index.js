@@ -87,6 +87,7 @@ searchLiset.addEventListener("change", function (e) {
     item: config.selected,
     coffeeMenuList: config.coffeeMenuList,
     target: detail,
+    type: "detail",
   };
   setDetail(detailFormat);
 
@@ -113,13 +114,23 @@ function numberWithCommas(x) {
 }
 
 function setDetail(config) {
-  const { item, coffeeMenuList, target } = config;
+  const { item, coffeeMenuList, target, type = "menu" } = config;
   const findItem = coffeeMenuList.find((coffee) => String(coffee.id) === item);
 
   console.log(findItem, "set Detail");
-  const result = `
+
+  let result = ``;
+  if (type === "menu") {
+    result = `
     ${makeItemInfoElement({ item: findItem })}
   `;
+  }
+  if (type === "detail") {
+    result = `
+    <img src="${findItem.src}" alt="" class="coffee__dtail_img">
+    ${makeItemInfoElement({ item: findItem })}
+    `;
+  }
   $(target).html(result);
 }
 
@@ -155,6 +166,7 @@ function setMenetListCheck(config) {
   menuList.map((item) => {
     if (selected === item.id) {
       item.checked = true;
+      $(myModal).modal();
     } else {
       item.checked = false;
     }

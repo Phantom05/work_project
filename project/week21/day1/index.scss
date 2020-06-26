@@ -1,4 +1,4 @@
-$device_pc:500px;
+$device_pc:600px;
 
 @mixin margin-top-setting($range) {
   $i: 1;
@@ -64,7 +64,7 @@ $device_pc:500px;
 
 
 .coffee__list_container {
-  height: 400px;
+  height: 600px;
   overflow-y: scroll;
   padding: 5px;
   border: 1px solid #efefef;
@@ -145,12 +145,44 @@ $device_pc:500px;
     top: 50%;
     @include spinner;
   }
-
-
 }
+
+.coffee__dtail_img {
+  width: 200px;
+  height: 230px;
+}
+
+
 
 @media screen and (max-width:$device_pc) {
   .wrap {
     width: 100%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .row.list {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .coffee__list_container {
+    overflow: hidden;
+    height: auto;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: white;
+  }
+
+  .orderBtn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
   }
 }

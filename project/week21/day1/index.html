@@ -10,13 +10,111 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
+  <div id="loadingbar" class="loadingbar_bg">
+    <div class="loadingbar"></div>
+  </div>
+  <div class="container">
+    <div class="wrap">
+      <div class="row">
+        <div class="col-md-12 ">
+          <h2 class="title">Coffe Order Program</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 ">
+          <input type="text" id="inputSearch" class="form-control">
+        </div>
+        <div class="col-md-2 padding-none">
 
-  <input type="text" id="inputSearch">
-  <input type="button" value="search" id="inputSearchBtn">
-  <div id="searchLiset"></div>
+          <button id="inputSearchBtn" class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 ">
+          <h4 class="title list">COFFEE LIST <button id="viewAllBtn" class="btn btn-default">All</button></h4>
+
+          <div id="searchLiset" class="coffee__list_container">
+
+            <div class="coffee__list_box">
+              <label class="coffee__check_label" for="test">
+                <div class="coffee__card">
+                  <span class="coffee__check_box">
+                    <input type="checkbox" id="test">
+                  </span>
+                  <div class="coffee__card_box img">
+                    <img
+                      src="https://lh3.googleusercontent.com/proxy/trtIvYsX5ZJ2VjTXFvPFb7mj5ZUEynoCKydUTzpaOCsVUZ5-ATVgS4wJFONG2rpLRCmxxRQ6TpJ6lTN1wdPxTTGpYE30YPFm9fe9S3iUmsc3J7bFYjY"
+                      alt="" class="coffee__card_img">
+                  </div>
+                  <div class="coffee__card_box name">
+                    아메리카노
+                  </div>
+                  <div class="coffee__card_box price">
+                    3,500 원
+                  </div>
+                </div>
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="title detail">Detail</h3>
+          <div id="detail">
+            <h4>아메리카노</h4>
+            <p>3500원</p>
+          </div>
+
+          <div>
+            <button class="btn btn-default">-</button>
+            <span>0</span>
+            <button class="btn btn-default">+</button>
+          </div>
+          <button class="btn btn-default">HOT</button>
+          <button class="btn btn-default">ICED</button>
+          <select name="" id="" class="form-control">
+            <option value="" hidden>사이즈</option>
+            <option value="">Small</option>
+            <option value="">Tall</option>
+            <option value="">Grande</option>
+          </select>
+
+          <select name="" id="" class="form-control">
+            <option value="" hidden>컵 선택</option>
+            <option value="">일회용</option>
+            <option value="">머그컵</option>
+          </select>
+
+          <div>
+            <button class="btn btn-default">바로주문하기</button>
+            <button class="btn btn-default">담기</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="title order">CART</h3>
+          <div id="orderList"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-default">ORDER</button>
+          <button class="btn btn-default">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="./config.js"></script>
   <script src="./index.js"></script>
 </body>

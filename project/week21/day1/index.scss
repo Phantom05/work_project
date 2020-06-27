@@ -12,8 +12,6 @@ $device_pc:600px;
   }
 }
 
-@include margin-top-setting(20);
-
 @mixin spinner($size:27px, $color:#118992) {
   width: $size;
   height: $size;
@@ -36,6 +34,15 @@ $device_pc:600px;
     }
   }
 }
+
+
+h1 {
+  color: red
+}
+
+@include margin-top-setting(20);
+
+
 
 * {
   box-sizing: border-box;

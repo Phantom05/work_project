@@ -1,0 +1,80 @@
+@import './_common';
+
+@include margin-top-setting(20);
+
+.wrap {
+  width: $device_pc;
+  margin: auto;
+}
+
+
+.coffee__list_box {
+  position: relative;
+  height: 600px;
+  overflow-y: scroll;
+  padding: 5px;
+  border: 1px solid $borderGray;
+  @include floatClear;
+}
+
+.coffee__search_info {
+  @include positionCenterCenter;
+  @include font(14, $fontGray);
+  width: 100%;
+  text-align: center;
+}
+
+.coffee__item_box {
+  float: left;
+  width: calc(100% / 2);
+  padding: 10px;
+}
+
+.coffee__item_card {
+  border: 1px solid $borderGray1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+  }
+}
+
+.coffee__checkbox {
+  &:checked~.coffee__item_card {
+    border: 1px solid green;
+  }
+}
+
+.coffee__item_img {
+  width: 110px;
+  height: 100px;
+}
+
+.coffee__item_row {
+  text-align: center;
+}
+
+.loading__box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: white;
+}
+
+.loading__bar {
+  @include spinner;
+  @include positionCenterCenter;
+}
+
+@media screen and (max-width:$device_pc) {
+  .wrap {
+    width: 100%;
+  }
+}

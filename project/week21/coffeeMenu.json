@@ -4,175 +4,168 @@
     "price": 3500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://lh3.googleusercontent.com/proxy/trtIvYsX5ZJ2VjTXFvPFb7mj5ZUEynoCKydUTzpaOCsVUZ5-ATVgS4wJFONG2rpLRCmxxRQ6TpJ6lTN1wdPxTTGpYE30YPFm9fe9S3iUmsc3J7bFYjY",
-    "id": 0
+    "src": "./images/아메리카노.jpg",
+    "id": 6815438325149
   }, {
     "name": "에스프레소",
     "price": 3500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://bettermonday.coffee/wp-content/uploads/2019/07/%EC%B9%B4%ED%8E%98%EB%9D%BC%EB%96%BChot.jpg",
-    "id": 1
+    "src": "./images/에스프레소.jpg",
+    "id": 41176040363336
   }, {
     "name": "카푸치노",
     "price": 3500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://bettermonday.coffee/wp-content/uploads/2019/07/%EC%B9%B4%ED%8E%98%EB%9D%BC%EB%96%BCice-1-300x300.jpg",
-    "id": 2
+    "src": "./images/카푸치노.jpg",
+    "id": 2031069861659
   }, {
     "name": "카페라떼",
     "price": 5500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://bettermonday.coffee/wp-content/uploads/2020/02/%ED%9D%91%EB%8B%B9%EB%9D%BC%EB%96%BC.jpg",
-    "id": 3
+    "src": "./images/카페라떼.jpg",
+    "id": 37361642159396
   }, {
     "name": "바닐라라떼",
     "price": 5500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGX3pKnV-veh4ZUgXeJXAEj2X0-MiRHeh2lQ&usqp=CAU",
-    "id": 4
+    "src": "./images/바닐라라떼.jpg",
+    "id": 42043074277026
   }, {
     "name": "헤이즐넛라떼",
     "price": 3500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://bettermonday.coffee/wp-content/uploads/2019/07/%EC%B4%88%EC%BD%94%EB%9D%BC%EB%96%BCice.jpg",
-    "id": 5
+    "src": "./images/헤이즐넛라떼.jpg",
+    "id": 8698459074468
   }, {
     "name": "카라멜마끼아또",
     "price": 4500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgmOFLbz7K_XtatGiBokWztCKTPSnvi4MiNw&usqp=CAU",
-    "id": 6
+    "src": "./images/카라멜마끼아또.jpg",
+    "id": 17327902546454
   }, {
     "name": "카페모카",
     "price": 5500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://gdimg.gmarket.co.kr/641073629/still/600?ver=1538621907",
-    "id": 7
+    "src": "./images/카페모카.jpg",
+    "id": 44284138608518
   }, {
     "name": "카라멜모카",
     "price": 4500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://img.celectory.com/main/202001/main_1579663393285.jpg",
-    "id": 8
+    "src": "./images/카라멜모카.jpg",
+    "id": 27144981571402
   }, {
     "name": "고구마라떼",
     "price": 5500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQeGyp6zWHZPRnnPRjGdQXvFXJzmNyHFftW-w&usqp=CAU",
-    "id": 9
+    "src": "./images/고구마라떼.jpg",
+    "id": 4865488053302
   }, {
     "name": "카페비엔나",
     "price": 3500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://gdimg.gmarket.co.kr/916006359/still/600?ver=0",
-    "id": 10
+    "src": "./images/카페비엔나.jpg",
+    "id": 12791698133167
   }, {
     "name": "더치커피",
     "price": 5500,
     "category": "coffee",
     "categorySeq": 0,
-    "src": "https://www.kfckorea.com/nas/product/Q7mBOgjlGfbn.png",
-    "id": 11
+    "src": "./images/더치커피.jpg",
+    "id": 26456015531163
   }, {
     "name": "녹차",
     "price": 4500,
     "category": "tea",
     "categorySeq": 1,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSP_QX8o8W5WFyOqOidvXhkEH-Q7M6nVhuMMA&usqp=CAU",
-    "id": 12
+    "src": "./images/녹차.jpg",
+    "id": 24134187344629
   }, {
     "name": "유자차",
     "price": 3500,
     "category": "tea",
     "categorySeq": 1,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdKOX-JCI5qGNjG4fv11_ADIv00KYJoBWMjQ&usqp=CAU",
-    "id": 13
+    "src": "./images/유자차.jpg",
+    "id": 18277052823499
   }, {
     "name": "레몬차",
     "price": 4500,
     "category": "tea",
     "categorySeq": 1,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRosaacJJleNoidwnq9FKgWQdz98pq5KlXjyA&usqp=CAU",
-    "id": 14
+    "src": "./images/레몬차.jpg",
+    "id": 23123725140030
   }, {
     "name": "캐모마일",
     "price": 3500,
     "category": "tea",
     "categorySeq": 1,
-    "src": "https://lh3.googleusercontent.com/proxy/Gzvane9ctXDQzFi-DyXdU3dt8_Q1Y6H6enHKHK84T6CelhdR2VhXesPV-xsGSzZUrMpJNEeiu36H5Uio2312DB4JrtDYSaWTo_qvpcDBkJjHvhFbpMIPbBdPcERDB0i9x6f0tDdkd83dn_I4EqQfEKvz0JDwgzKqCCuQAxTPqMukm0JgZtKgpd4c",
-    "id": 15
+    "src": "./images/캐모마일.jpg",
+    "id": 14869769844760
   }, {
     "name": "아이스티",
     "price": 4500,
     "category": "tea",
     "categorySeq": 1,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVg6Y8xhiHmow-FmggF9Svf9dDZjrqOCNcvw&usqp=CAU",
-    "id": 16
+    "src": "./images/아이스티.jpg",
+    "id": 24510277975844
   }, {
     "name": "유자에이드",
     "price": 3500,
     "category": "ade",
     "categorySeq": 2,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSUIxTTv2qB6FfBzwtQ8ww08daAwzbxnNedcQ&usqp=CAU",
-    "id": 17
+    "src": "./images/유자에이드.jpg",
+    "id": 5839861480712
   }, {
     "name": "레몬에이드",
     "price": 4500,
     "category": "ade",
     "categorySeq": 2,
-    "src": "https://lh3.googleusercontent.com/proxy/S4DuN3bizwhZy_agKk5FhPvNnlfS01aoZVMoRIUuPcGZllQB6PYNARBQUMI157BfMe31PfKhPvvCJzqKuME1nED8lzPV6pSFXEb26AgRNoPP6i0Nq_1iTa0A9n7-zw",
-    "id": 18
+    "src": "./images/레몬에이드.jpg",
+    "id": 43157939529894
   }, {
     "name": "자몽에이드",
     "price": 4500,
     "category": "ade",
     "categorySeq": 2,
-    "src": "https://imgs.giftishow.co.kr/Resource/goods/G00000265639/G00000265639.jpg",
-    "id": 19
-  }, {
-    "name": "블루레몬에이드",
-    "price": 4500,
-    "category": "ade",
-    "categorySeq": 2,
-    "src": "https://lh3.googleusercontent.com/proxy/6SFt8MYUxwQkSpQJoliIN0ZgKLAyzyVEBNieAu375A4QL_OtwHeZKfdKs5XCcH1-acu4zgimhomAwGeJQmBXRFQktSj7fNW644O5Wz7rcfDcUXiSXAL8tv1-b_6OVmYk-Pk",
-    "id": 20
+    "src": "./images/자몽에이드.jpg",
+    "id": 47368736276150
   }, {
     "name": "망고요거트스무디",
     "price": 5500,
     "category": "smoothie",
     "categorySeq": 3,
-    "src": "https://www.cafedroptop.com/uploadimg/0.08107100_1343798813.jpg",
-    "id": 21
+    "src": "./images/망고요거트스무디.jpg",
+    "id": 8906936736664
   }, {
     "name": "스트로베리스무디",
     "price": 5500,
     "category": "smoothie",
     "categorySeq": 3,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2xEX28fi9bONOYtofh-PlcHHhoL2Q9p9LIw&usqp=CAU",
-    "id": 22
+    "src": "./images/스트로베리스무디.jpg",
+    "id": 21948991331482
   }, {
     "name": "블루베리스무디",
     "price": 5500,
     "category": "smoothie",
     "categorySeq": 3,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRft8jR68LbTk85Af_PtLzAsLnEz7vY_ejDQw&usqp=CAU",
-    "id": 23
+    "src": "./images/블루베리스무디.jpg",
+    "id": 19562049066193
   }, {
     "name": "플레인요거트스무디",
     "price": 3500,
     "category": "smoothie",
     "categorySeq": 3,
-    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRO9EecaWM29d6ejiL2-dDG5kb3-Wasv5fxeA&usqp=CAU",
-    "id": 24
+    "src": "./images/플레인요거트스무디.jpg",
+    "id": 38099746949839
   }]
 }

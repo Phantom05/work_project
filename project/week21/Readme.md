@@ -160,10 +160,10 @@ $(target).html(list.map((item) => createCoffeeCardElement(item)));
   <li>(선택한 select box 이름) - (textarea 내용)</li>
    ```
 
-  .
+  
 
 
 
 <hr>
-*보충수업 잔여  : **7h***
+보충수업 잔여  : **7h**
 

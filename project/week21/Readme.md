@@ -95,6 +95,69 @@ function createCoffeeCardElement(item = {}) {
 $(target).html(list.map((item) => createCoffeeCardElement(item)));
 ```
 
++ **inputSearch 하여 filtering 하는 검색 기능 구현**
+
+  ```js
+  inputSearch.addEventListener("keyup", function (e) {
+    const target = e.target;
+    const targetValue = target.value.trim();
+    if (e.key === "Enter") {
+      const filterList = config.coffeList.filter(
+        (item) => item.name.indexOf(targetValue) !== -1
+      );
+  
+      const drawFormat = {
+        type: "update",
+        name: "menu",
+        target: coffeeListBox,
+        list: filterList,
+      };
+      dataDrawing(drawFormat);
+    }
+  });
+  ```
+
+  + 원하는 데이터를 filter하고 `drawing` 진행
+
++ list click 시 popup Modal Detail 데이터 수정
+
+  ```js
+  
+   const modalFormat = {
+      target: detailModal,
+      title: "Product Detail.",
+      content: modalDetailContentElement(findItem),
+    };
+    console.log(findItem);
+    openPopup(modalFormat);
+  
+  function modalDetailContentElement(item) {
+    const { src, name, price, id } = item;
+    return `
+    <div class="row modal__content_box" data-name="modal_${id}">
+    <div class="col-md-6">
+      <div class="modalDetail__row">
+        <img
+          src="${src}"
+          alt="" class="coffee__item_img large">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="modalDetail__row">
+        <div class="modal__item_name">${name}</div>
+      </div>
+      <div class="modalDetail__row">
+        <div class="modal__item_price">${numberWithCommas(price)} 원</div>
+      </div>
+  
+    </div>
+  </div>
+    `;
+  }
+  ```
+
+  + `findItem`을 진행하여 해당하는 데이터를 얻은 후 modal안의 정보를 업데이트,
+
 + **Ajax Study**
 
   + 오픈 API를 활용한 ajax 학습
@@ -120,7 +183,13 @@ $(target).html(list.map((item) => createCoffeeCardElement(item)));
 
   + `https://jsonplaceholder.typicode.com` 주소를 이용하여 데이터 송수신 학습, 받은 `data`로 화면 `drawing` 까지 진행해봄
 
-
++ 크롤링을 이용한 아키텍쳐 설명
+  + 간단설명
+  + pulling으로 지속적으로 크롤링을 진행해야함
+  + websocket을 활용해야 서버에서 브라우저로 양방향 통신이 가능
+  + 메세지는 앱으로 만들수있음.
+  + 리액트를 공부할 시 js를 활용한 앱이나 프로그램 으로 넘어가기가 수월함
++ 사이드 프로젝트시 `a` 링크로 `signup.html` 으로 페이지 넘기면 되는 예제 설명
 
 + quiz 풀이
 
@@ -165,5 +234,5 @@ $(target).html(list.map((item) => createCoffeeCardElement(item)));
 
 
 <hr>
-보충수업 잔여  : **7h**
+보충수업 잔여  : 7h
 

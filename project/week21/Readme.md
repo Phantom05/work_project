@@ -97,17 +97,48 @@ $(target).html(list.map((item) => createCoffeeCardElement(item)));
 
 
 
++ quiz 풀이
+
 
 
 
 
 + 숙제
-  +  인풋 2개의 퀴즈 풀어보기!
-  + quiz 1 
-    + 1. add, search를 할수있는 selected 박스를 둡니다.
-      2. input에서 서치시 select박스가 add 이면 addList 공간에 리스트를 추가합니다.
-      3. input 서치시 select박스가 search 이면 Search List 공간에 AddList에서 검색한 리스트를 보여줍니다.
+
+  + 커피 주문 프로그램 완성해보기
+
+  + 퀴즈 풀어보기
+
+  + ***quiz 1*** [링크](https://github.com/Phantom05/work_project/tree/master/project/week21/quiz/q1)
+
+    1. `add, search`를 할수있는 `selected` 박스를 둡니다.
+
+    2. `input` 에서 서치시 `select` 박스가 `add` 이면 `addList`  공간에 리스트를 추가합니다.
+
+    3. `input `서치시 `select` 박스가 `search` 이면 `Search List` 공간에 `AddList` 에서 검색한 리스트를 보여줍니다.
+
+  + ***quiz 2*** [링크](https://github.com/Phantom05/work_project/tree/master/project/week21/quiz/q2)
+
+    1. 5분에서 카운트 다운되는 타이머를 만들고 (00:00) 형식
+
+    2. 1분대, 2분대, 3분대, 4분대, 5분대 옵션으로 이루어진 `select `박스를 둡니다.
+
+    3.  `select` 박스를 선택 후 `click` 버튼을 눌렀을때 현재 타이머 시간과 분대의 시간이 맞다면 `success alert`을 실패시 `failure alert`을 띄워줍니다.
+
+  +  ***quiz 3***  [링크](https://github.com/Phantom05/work_project/tree/master/project/week21/quiz/q3)
+
+    1. `input `에서 `enter`시 `select `박스로 옵션들이 추가됩니다.
+    2. `selected `박스를 선택 후 `textarea` 에 글을 입력하고 `done ` 버튼을 누를시
+    3.  `#list` 태그의 요소로 아래와 같은 형식으로 `li` 태그가 들어갑니다.
+
+     ```html
+    <li>(선택한 select box 이름) - (textarea 내용)</li>
+     ```
+
+    
+
+    
 
 <hr>
-*보충수업 잔여  : **8h***
+*보충수업 잔여  : **7h***
 

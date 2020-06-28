@@ -119,7 +119,7 @@ $(target).html(list.map((item) => createCoffeeCardElement(item)));
 
   + 원하는 데이터를 filter하고 `drawing` 진행
 
-+ list click 시 popup Modal Detail 데이터 수정
++ **list click 시 popup Modal Detail 데이터 수정**
 
   ```js
   

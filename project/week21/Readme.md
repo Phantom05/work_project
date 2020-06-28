@@ -103,6 +103,10 @@ $(target).html(list.map((item) => createCoffeeCardElement(item)));
 
 + 숙제
   +  인풋 2개의 퀴즈 풀어보기!
+  + quiz 1 
+    + 1. add, search를 할수있는 selected 박스를 둡니다.
+      2. input에서 서치시 select박스가 add 이면 addList 공간에 리스트를 추가합니다.
+      3. input 서치시 select박스가 search 이면 Search List 공간에 AddList에서 검색한 리스트를 보여줍니다.
 
 <hr>
 *보충수업 잔여  : **8h***

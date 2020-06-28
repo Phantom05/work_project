@@ -32,7 +32,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="coffee__search_box">
-                <input type="text" class="form-control" id="inputSearch">
+                <input type="text" class="form-control" id="inputSearch" placeholder="Search Data.">
               </div>
             </div>
           </div>
@@ -87,12 +87,61 @@
               aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="modalHeader">Modal title</h4>
         </div>
-        <div class="modal-body" id="modalBody">
-          ...
-        </div>
+        <form action="" id="modalForm">
+          <div class="modal-body" id="modalBody">
+            <div class="row modal__content_box">
+
+
+              <div class="col-md-6">
+                <div class="modalDetail__row">
+                  <img
+                    src="https://bettermonday.coffee/wp-content/uploads/2013/06/%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8ice.jpg"
+                    alt="" class="coffee__item_img large">
+                </div>
+              </div>
+              <div class="col-md-6">
+
+                <div class="modalDetail__row">
+                  <div class="modal__item_name">아메리카노</div>
+                </div>
+                <div class="modalDetail__row">
+                  <div class="modal__item_price">3,500 원</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-control">
+
+            <div class="modalDetail__row">
+              <button class="btn btn-default">-</button>
+              <button class="btn ">0</button>
+              <button class="btn btn-default">+</button>
+            </div>
+            <div class="modalDetail__row">
+              <div class="modal__btn box">
+                <input type="radio" name="temper" id="detailCoffeTemperHot" class="modal__input temper" checked hidden
+                  value="0">
+                <label for="detailCoffeTemperHot" class="btn btn-detault modal__btn item hot">HOT</label>
+
+                <input type="radio" name="temper" id="detailCoffeTemperIced" class="modal__input temper" hidden
+                  value="1">
+                <label for="detailCoffeTemperIced" class="btn btn-detault modal__btn item iced">ICED</label>
+              </div>
+            </div>
+            <div class="modalDetail__row">
+              <select name="size" id="detailCoffeSize" class="form-control" value="">
+                <option value="0" class="hidden">Size</option>
+                <option value="1">Tall</option>
+                <option value="2">Grande</option>
+              </select>
+            </div>
+
+          </div>
+        </form>
         <div class="modal-footer" id="modalFooter">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Add to Cart</button>
+          <button type="button" class="btn btn-primary">Order immediately</button>
         </div>
       </div>
     </div>

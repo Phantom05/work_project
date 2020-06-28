@@ -52,6 +52,11 @@
 .coffee__item_img {
   width: 110px;
   height: 100px;
+
+  &.large {
+    width: 200px;
+    height: 220px;
+  }
 }
 
 .coffee__item_row {
@@ -71,6 +76,70 @@
 .loading__bar {
   @include spinner;
   @include positionCenterCenter;
+}
+
+.modal__content_box {
+  padding: 0 30px;
+}
+
+.modal__item_name {
+  @include font(25, black) {
+    font-weight: bold;
+  }
+}
+
+.modal__item_price {
+  @include font(20, #292929);
+}
+
+.modal__btn {
+  opacity: 0.9;
+
+  &.box {
+    @include floatClear;
+  }
+
+  &.hot {
+    color: $red;
+    border: 1px solid $red;
+  }
+
+  &.iced {
+    color: $blue;
+    border: 1px solid $blue;
+  }
+
+  &.item {
+    float: left;
+    width: calc(100% / 2);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.modalDetail__row {
+  margin-bottom: 10px;
+}
+
+.modal__input {
+  &.temper:checked+.modal__btn {
+    opacity: 1;
+    color: white;
+
+    &.hot {
+      background: $red;
+    }
+
+    &.iced {
+      background: $blue;
+    }
+  }
+}
+
+.modal-control {
+  padding: 0 30px;
 }
 
 @media screen and (max-width:$device_pc) {

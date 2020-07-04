@@ -112,6 +112,7 @@ $(target).html(list.map((item) => createCoffeeCardElement(item)));
         target: coffeeListBox,
         list: filterList,
       };
+        
       dataDrawing(drawFormat);
     }
   });

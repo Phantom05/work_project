@@ -5,16 +5,16 @@ console.log("hello");
  *
  */
 
-// function Test() {
-//   const self = this;
-//   Test.count = 0;
+function Test() {
+  const self = this;
+  Test.count = 0;
 
-//   setInterval(() => {
-//     Test.count++;
+  setInterval(() => {
+    Test.count++;
 
-//     // console.log(Test.count);
-//   }, 1000);
-// }
+    // console.log(Test.count);
+  }, 1000);
+}
 // Test();
 
 class Timer {
@@ -45,8 +45,6 @@ const timerSetting = {
   sec: 300,
 };
 const timer = new Timer(timerSetting);
-
-console.log(timer, "tiemr");
 timer.start();
 
 document.getElementById("testBtn").addEventListener("click", function (e) {
